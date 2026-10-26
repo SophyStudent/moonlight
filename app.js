@@ -34,6 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (sideDrawer && drawerBackdrop) {
       sideDrawer.classList.add('active');
       drawerBackdrop.classList.add('active');
+      sideDrawer.classList.remove('translate-x-full', 'pointer-events-none', 'invisible');
+      sideDrawer.classList.add('translate-x-0', 'pointer-events-auto', 'visible');
+      drawerBackdrop.classList.remove('opacity-0', 'pointer-events-none', 'invisible');
+      drawerBackdrop.classList.add('opacity-100', 'pointer-events-auto', 'visible');
       document.body.style.overflow = 'hidden';
     }
   }
@@ -42,6 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (sideDrawer && drawerBackdrop) {
       sideDrawer.classList.remove('active');
       drawerBackdrop.classList.remove('active');
+      sideDrawer.classList.remove('translate-x-0', 'pointer-events-auto', 'visible');
+      sideDrawer.classList.add('translate-x-full', 'pointer-events-none', 'invisible');
+      drawerBackdrop.classList.remove('opacity-100', 'pointer-events-auto', 'visible');
+      drawerBackdrop.classList.add('opacity-0', 'pointer-events-none', 'invisible');
       document.body.style.overflow = '';
     }
   }
@@ -49,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (openDrawerBtn) openDrawerBtn.addEventListener('click', openDrawer);
   if (closeDrawerBtn) closeDrawerBtn.addEventListener('click', closeDrawer);
   if (drawerBackdrop) drawerBackdrop.addEventListener('click', closeDrawer);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeDrawer(); });
 
   if (sideDrawer) {
     sideDrawer.querySelectorAll('a').forEach(link => {

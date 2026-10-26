@@ -230,8 +230,8 @@
 </header>
 
 <!-- ================= RESPONSIVE NAVIGATION DRAWER ================= -->
-<div id="drawer-backdrop" class="drawer-backdrop fixed inset-0 bg-black/85 z-[60] backdrop-blur-sm"></div>
-<aside id="side-drawer" class="side-drawer fixed top-0 right-0 h-full w-full sm:w-[380px] bg-[#111111] border-l border-neutral-800 z-[70] p-6 sm:p-10 flex flex-col justify-between overflow-y-auto" aria-label="Navigation Drawer">
+<div id="drawer-backdrop" class="fixed inset-0 bg-black/85 z-[60] backdrop-blur-sm opacity-0 pointer-events-none invisible transition-all duration-300"></div>
+<aside id="side-drawer" class="fixed top-0 right-0 h-full w-full sm:w-[380px] bg-[#111111] border-l border-neutral-800 z-[70] p-6 sm:p-10 flex flex-col justify-between overflow-y-auto translate-x-full pointer-events-none invisible transition-all duration-300 ease-out" aria-label="Navigation Drawer">
   <div>
     <div class="flex items-center justify-between pb-6 border-b border-neutral-800">
       <a href="index.html" class="font-brand-edgy text-xl sm:text-2xl tracking-wider text-white">
@@ -1010,7 +1010,8 @@
     if (playBtn) playBtn.addEventListener('click', toggleVinyl);
     if (headerAudioToggle) headerAudioToggle.addEventListener('click', toggleVinyl);
   
-    // Responsive Navigation Drawer Controller
+    
+    // Bulletproof Responsive Navigation Drawer Controller
     const openMenuBtn = document.getElementById('open-menu-drawer');
     const closeMenuBtn = document.getElementById('close-menu-drawer');
     const sideDrawer = document.getElementById('side-drawer');
@@ -1018,27 +1019,40 @@
 
     function openDrawer() {
       if (sideDrawer && drawerBackdrop) {
-        sideDrawer.classList.add('active');
-        drawerBackdrop.classList.add('active');
+        sideDrawer.classList.remove('translate-x-full', 'pointer-events-none', 'invisible');
+        sideDrawer.classList.add('translate-x-0', 'pointer-events-auto', 'visible');
+        drawerBackdrop.classList.remove('opacity-0', 'pointer-events-none', 'invisible');
+        drawerBackdrop.classList.add('opacity-100', 'pointer-events-auto', 'visible');
         document.body.style.overflow = 'hidden';
       }
     }
 
     function closeDrawer() {
       if (sideDrawer && drawerBackdrop) {
-        sideDrawer.classList.remove('active');
-        drawerBackdrop.classList.remove('active');
+        sideDrawer.classList.remove('translate-x-0', 'pointer-events-auto', 'visible');
+        sideDrawer.classList.add('translate-x-full', 'pointer-events-none', 'invisible');
+        drawerBackdrop.classList.remove('opacity-100', 'pointer-events-auto', 'visible');
+        drawerBackdrop.classList.add('opacity-0', 'pointer-events-none', 'invisible');
         document.body.style.overflow = '';
       }
     }
 
-    if (openMenuBtn) openMenuBtn.addEventListener('click', openDrawer);
-    if (closeMenuBtn) closeMenuBtn.addEventListener('click', closeDrawer);
+    if (openMenuBtn) openMenuBtn.addEventListener('click', (e) => { e.preventDefault(); openDrawer(); });
+    if (closeMenuBtn) closeMenuBtn.addEventListener('click', (e) => { e.preventDefault(); closeDrawer(); });
     if (drawerBackdrop) drawerBackdrop.addEventListener('click', closeDrawer);
 
-    document.querySelectorAll('.drawer-link').forEach(link => {
-      link.addEventListener('click', closeDrawer);
+    if (sideDrawer) {
+      sideDrawer.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          closeDrawer();
+        });
+      });
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeDrawer();
     });
+
 
   </script>
 
