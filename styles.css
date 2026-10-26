@@ -1,0 +1,365 @@
+/* Phase - Band Home Exact Authentic Styles */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=New+Rocker&family=Syne:wght@700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --phase-black: #0c0c0c;
+  --phase-dark: #121212;
+  --phase-gray: #181818;
+  --phase-light-gray: #242424;
+  --phase-accent: #2bfb9c;
+  --phase-accent-hover: #22df89;
+  --phase-border: rgba(255, 255, 255, 0.08);
+  --phase-text-muted: #888888;
+  --font-edgy: 'New Rocker', 'Bebas Neue', cursive, sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Raleway', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--phase-black);
+  color: #ffffff;
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #202020;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--phase-accent);
+}
+
+/* Phase Header */
+.phase-header {
+  background: rgba(12, 12, 12, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--phase-border);
+}
+
+/* ==========================================================================
+   HERO STAGE (REVOLUTION SLIDER 1:1 REPLICATION - EDGY & BLENDED CUTOUT)
+   ========================================================================== */
+.hero-stage {
+  position: relative;
+  min-height: 100vh;
+  background-color: #0c0c0c;
+  background-image: url('assets/hero-bg.jpg');
+  background-size: cover;
+  background-position: center top;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 65% 50%, rgba(12,12,12,0.1) 0%, rgba(12,12,12,0.65) 60%, #0c0c0c 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* The Iconic Green Paint Brush Stroke in the Hero (Layer 1 - Behind Artist) */
+.hero-brush-stroke {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(-1deg);
+  width: 1500px;
+  max-width: 96vw;
+  height: 520px;
+  background-image: url('assets/paint-2.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+  z-index: 1;
+  filter: drop-shadow(0 0 35px rgba(43, 251, 156, 0.4));
+}
+
+/* Edgy Large Artist Typography (Slightly Reduced so Not Covered by Image) */
+.hero-artist-name {
+  position: relative;
+  z-index: 4;
+  font-family: var(--font-edgy);
+  font-size: clamp(3.6rem, 8.5vw, 7.5rem);
+  line-height: 0.88;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  transform: skewX(-3deg) rotate(-2deg);
+  text-shadow: 0 8px 30px rgba(0, 0, 0, 0.95), 0 2px 6px rgba(0,0,0,0.9);
+  user-select: none;
+  max-width: 580px;
+}
+
+.hero-artist-name .word-afriqa {
+  display: block;
+  margin-left: 0.35em;
+  color: #ffffff;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.95);
+}
+
+/* Transparent Background Artist Cutout — above ALL hero layers including text */
+.hero-artist-cutout {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  width: 680px;
+  max-width: 52vw;
+  height: 93vh;
+  min-height: 600px;
+  z-index: 10;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  pointer-events: none;
+}
+
+.hero-slide-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease-in-out;
+  will-change: opacity, transform;
+}
+
+.hero-slide-img.active {
+  opacity: 1;
+  visibility: visible;
+  animation: heroArtistIdle 5s ease-in-out infinite alternate;
+}
+
+/* Slightly going up and down on hover (Like Revolution Slider in Original Theme) */
+.hero-artist-cutout:hover .hero-slide-img.active,
+.hero-stage:hover .hero-artist-cutout .hero-slide-img.active {
+  animation: heroArtistHoverFloat 2.6s ease-in-out infinite alternate !important;
+  filter: contrast(1.08) brightness(1.05) drop-shadow(0 20px 45px rgba(0, 0, 0, 0.9));
+}
+
+@keyframes heroArtistIdle {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-10px); }
+}
+
+@keyframes heroArtistHoverFloat {
+  0% { transform: translateY(0px) scale(1.01); }
+  50% { transform: translateY(-22px) scale(1.025); }
+  100% { transform: translateY(-4px) scale(1.01); }
+}
+
+/* ==========================================================================
+   BUTTONS & SECTION STYLES
+   ========================================================================== */
+.btn-phase-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 34px;
+  background-color: var(--phase-accent);
+  color: #000000;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(43, 251, 156, 0.25);
+}
+.btn-phase-primary:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+.btn-phase-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 34px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0;
+  transition: all 0.25s ease;
+}
+.btn-phase-secondary:hover {
+  border-color: var(--phase-accent);
+  color: var(--phase-accent);
+  transform: translateY(-2px);
+}
+
+/* Section Headings in Phase */
+.section-title-phase {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 900;
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.section-subtitle-phase {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--phase-accent);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.phase-row {
+  border-top: 1px solid var(--phase-border);
+}
+
+/* Vinyl / CD Spinning Effect */
+.vinyl-disc {
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.vinyl-container:hover .vinyl-disc {
+  transform: translateX(45px) rotate(45deg);
+}
+
+/* Audio Player Track Row */
+.track-row {
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+.track-row:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-color: rgba(43, 251, 156, 0.3);
+}
+
+/* Smart-Link Card */
+.platform-pill {
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.platform-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+}
+
+/* Video Card Overlay */
+.video-phase-box {
+  position: relative;
+  overflow: hidden;
+}
+.video-phase-box img {
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.video-phase-box:hover img {
+  transform: scale(1.05);
+}
+
+/* Side Drawer Overlay */
+.drawer-backdrop {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.drawer-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.side-drawer {
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.side-drawer.active {
+  transform: translateX(0);
+}
+
+/* Video Modal */
+.modal-overlay {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Brand Edgy Font (Matches Hero Artist Name) */
+.font-brand-edgy {
+  font-family: var(--font-edgy);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Always-Spinning Vinyl Disc Animation */
+@keyframes spinVinyl {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-vinyl {
+  animation: spinVinyl 6s linear infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* Original Theme Section Backgrounds */
+.bg-phase-astro {
+  background-color: #242424;
+  background-image: url('assets/overlay-bg-astro.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.bg-phase-merch {
+  background-color: #262626;
+  background-image: url('assets/overlay-bg-shop.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}

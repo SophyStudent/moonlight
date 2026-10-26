@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Moonlight Afriqa &ndash; Official Website &bull; Band Home &bull; Pre-Save &ldquo;Blessed&rdquo;</title>
+  <meta name="title" content="Moonlight Afriqa &ndash; Official Website &bull; Band Home &bull; Pre-Save &ldquo;Blessed&rdquo;">
+  <meta name="description" content="Official website of Nigerian singer, songwriter, and multi-instrumentalist Moonlight Afriqa. Pre-save the upcoming single 'Blessed' and stream his discography across 8 major music services.">
+  <meta name="keywords" content="Moonlight Afriqa, Blessed, Afrobeats, Afro-fusion, Imaekhai Richard Igebina, SASEZOLA, Love Dimension, Lock Down, Magic Pen, Phase Band Home">
+  <meta name="author" content="Moonlight Afriqa Management">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://moonlightafriqa.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="music.musician">
+  <meta property="og:url" content="https://moonlightafriqa.com/">
+  <meta property="og:title" content="Moonlight Afriqa &ndash; Official Website &bull; Pre-Save &ldquo;Blessed&rdquo;">
+  <meta property="og:description" content="Official website and smart-link portal for fast-rising Nigerian artist Moonlight Afriqa.">
+  <meta property="og:image" content="assets/artist/unnamed-4-1152x1152.jpg">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MusicGroup",
+        "@id": "https://moonlightafriqa.com/#artist",
+        "name": "Moonlight Afriqa",
+        "alternateName": "Imaekhai Richard Igebina",
+        "genre": ["Afrobeats", "Afro-fusion", "Reggae", "Alte"],
+        "description": "Fast-rising Nigerian singer, songwriter, and multi-instrumentalist known as the magic pen in contemporary Afrobeats.",
+        "url": "https://moonlightafriqa.com/",
+        "image": "assets/artist/unnamed-4-1152x1152.jpg",
+        "email": "booking@moonlightafrriqa.com"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Tailwind CSS & Theme Stylesheet -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            phase: {
+              black: '#0c0c0c',
+              dark: '#121212',
+              gray: '#181818',
+              accent: '#2bfb9c',
+              accentHover: '#22df89',
+            }
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Raleway', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-[#0c0c0c] text-white font-body selection:bg-[#2bfb9c] selection:text-black">
+
+  <!-- ================= TOP SITE HEADER (PHASE EXACT STYLE) ================= -->
+  <header id="main-header" class="fixed top-0 left-0 w-full z-50 phase-header transition-all duration-300">
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-12 h-24 flex items-center justify-between">
+      
+      <!-- Brand Logo (Same font style as Hero Image) -->
+      <a href="#" class="flex items-center gap-2 group" aria-label="Moonlight Afriqa Official Home">
+        <span class="font-brand-edgy text-2xl tracking-wider text-white group-hover:text-[#2bfb9c] transition-colors">
+          MOONLIGHT AFRIQA
+        </span>
+        <span class="inline-block w-2 h-2 rounded-full bg-[#2bfb9c]"></span>
+      </a>
+
+      <!-- Desktop Navigation (Matching Phase Theme Menu — Smart Links Removed) -->
+      <nav id="main-navigation" class="hidden xl:flex items-center space-x-9 font-heading text-[11px] tracking-[0.2em] uppercase font-bold text-neutral-300" aria-label="Main Navigation">
+        <a href="#hero" class="text-[#2bfb9c] transition-colors">Home</a>
+        <a href="#about" class="hover:text-[#2bfb9c] transition-colors">Tales</a>
+        <a href="#new-release" class="hover:text-[#2bfb9c] transition-colors">Blessed</a>
+        <a href="#video" class="hover:text-[#2bfb9c] transition-colors">Video</a>
+        <a href="#gallery" class="hover:text-[#2bfb9c] transition-colors">Gallery</a>
+        <a href="#shows" class="hover:text-[#2bfb9c] transition-colors">Shows</a>
+        <a href="#news" class="hover:text-[#2bfb9c] transition-colors">News</a>
+        <a href="#merch" class="hover:text-[#2bfb9c] transition-colors">Merch</a>
+      </nav>
+
+      <!-- Action Utilities -->
+      <div class="flex items-center space-x-6">
+        <button type="button" aria-label="Search" class="text-neutral-400 hover:text-white transition-colors">
+          <i class="fa-solid fa-magnifying-glass text-xs"></i>
+        </button>
+
+        <a href="#merch" aria-label="Cart" class="relative text-neutral-400 hover:text-white transition-colors">
+          <i class="fa-solid fa-bag-shopping text-sm"></i>
+          <span class="absolute -top-2 -right-2 bg-[#2bfb9c] text-black text-[9px] font-heading font-bold w-4 h-4 rounded-full flex items-center justify-center">0</span>
+        </a>
+
+        <!-- Side Drawer Toggle -->
+        <button id="open-side-drawer" type="button" aria-label="Open Sidebar Menu" class="text-neutral-300 hover:text-[#2bfb9c] transition-colors p-1">
+          <i class="fa-solid fa-bars-staggered text-lg"></i>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-toggle" type="button" aria-label="Toggle Mobile Menu" class="xl:hidden text-neutral-300 hover:text-white p-1">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden xl:hidden bg-[#101010] border-b border-neutral-800 px-8 py-6 font-heading text-xs tracking-widest uppercase space-y-4">
+      <a href="#hero" class="block text-[#2bfb9c]">Home</a>
+      <a href="#about" class="block text-neutral-300 hover:text-white">Tales</a>
+      <a href="#new-release" class="block text-neutral-300 hover:text-white">Blessed</a>
+      <a href="#video" class="block text-neutral-300 hover:text-white">Video</a>
+      <a href="#gallery" class="block text-neutral-300 hover:text-white">Gallery</a>
+      <a href="#shows" class="block text-neutral-300 hover:text-white">Shows</a>
+      <a href="#news" class="block text-neutral-300 hover:text-white">News</a>
+      <a href="#merch" class="block text-neutral-300 hover:text-white">Merch</a>
+    </div>
+  </header>
+
+  <!-- ================= SIDE DRAWER PANEL ================= -->
+  <div id="drawer-backdrop" class="drawer-backdrop fixed inset-0 bg-black/85 z-[60] backdrop-blur-sm"></div>
+  <aside id="side-drawer" class="side-drawer fixed top-0 right-0 h-full w-full sm:w-[420px] bg-[#111111] border-l border-neutral-800 z-[70] p-10 flex flex-col justify-between overflow-y-auto" aria-label="Side Navigation Panel">
+    <div>
+      <div class="flex items-center justify-between pb-8 border-b border-neutral-800">
+        <span class="font-brand-edgy text-2xl tracking-wider text-white">
+          MOONLIGHT AFRIQA<span class="text-[#2bfb9c]">.</span>
+        </span>
+        <button id="close-side-drawer" type="button" aria-label="Close Side Drawer" class="text-neutral-400 hover:text-white text-2xl">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="mt-8 flex items-center space-x-4 p-4 bg-neutral-900/60 border border-neutral-800">
+        <img src="assets/artist/unnamed-4-1152x1152.jpg" alt="Moonlight Afriqa" class="w-16 h-16 object-cover border border-[#2bfb9c]/30">
+        <div>
+          <span class="text-[10px] font-heading uppercase tracking-widest text-[#2bfb9c] font-bold block">The Magic Pen</span>
+          <h4 class="font-heading font-bold text-sm text-white uppercase">Imaekhai Richard Igebina</h4>
+          <span class="text-xs text-neutral-400 font-body">&ldquo;Uki&rdquo; = Moonlight</span>
+        </div>
+      </div>
+
+      <nav class="mt-8 space-y-4 font-heading text-xs tracking-widest uppercase font-bold">
+        <a href="#about" class="block text-neutral-300 hover:text-[#2bfb9c] transition-colors">Tales &bull; Bio</a>
+        <a href="#new-release" class="block text-neutral-300 hover:text-[#2bfb9c] transition-colors">Blessed &bull; Single</a>
+        <a href="blessed-out-now.html" class="block text-[#2bfb9c] hover:underline transition-colors">&rarr; Blessed &bull; Out Now Landing</a>
+        <a href="blessed-single.html" class="block text-[#2bfb9c] hover:underline transition-colors">&rarr; Blessed &bull; Pre-Save Portal</a>
+        <a href="#video" class="block text-neutral-300 hover:text-[#2bfb9c] transition-colors">Last Video</a>
+        <a href="#gallery" class="block text-neutral-300 hover:text-[#2bfb9c] transition-colors">Photo Gallery</a>
+        <a href="#shows" class="block text-neutral-300 hover:text-[#2bfb9c] transition-colors">Upcoming Shows</a>
+        <a href="#news" class="block text-neutral-300 hover:text-[#2bfb9c] transition-colors">Latest News</a>
+        <a href="#merch" class="block text-neutral-300 hover:text-[#2bfb9c] transition-colors">Official Merch</a>
+      </nav>
+
+      <div class="mt-10 pt-6 border-t border-neutral-800 text-xs text-neutral-400 space-y-3 font-body">
+        <p class="font-heading uppercase tracking-wider text-neutral-200 font-bold">Management &amp; Bookings</p>
+        <p class="text-white font-medium">booking@moonlightafrriqa.com</p>
+        <p class="text-[11px] text-neutral-500">Live booking, festival appearances &amp; brand partnerships.</p>
+      </div>
+    </div>
+
+    <div class="pt-8 border-t border-neutral-800">
+      <div class="flex items-center space-x-6 text-neutral-400 text-lg">
+        <a href="https://open.spotify.com" target="_blank" rel="noopener" aria-label="Spotify" class="hover:text-[#1DB954] transition-colors"><i class="fa-brands fa-spotify"></i></a>
+        <a href="https://music.apple.com" target="_blank" rel="noopener" aria-label="Apple Music" class="hover:text-[#FA243C] transition-colors"><i class="fa-brands fa-apple"></i></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="hover:text-pink-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube" class="hover:text-red-500 transition-colors"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <p class="mt-4 text-[10px] text-neutral-500 uppercase tracking-widest font-heading">&copy; 2026 Moonlight Afriqa. All Rights Reserved.</p>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
+
+    <!-- ================= ROW 0: HERO STAGE (EXACT PHASE BAND-HOME IMITATION) ================= -->
+    <section id="hero" class="hero-stage" aria-label="Moonlight Afriqa Hero Stage">
+      <div class="hero-overlay"></div>
+
+      <!-- THE GREEN PAINT BRUSH STROKE (EXACT REVOLUTION SLIDER LAYER 2) -->
+      <div class="hero-brush-stroke"></div>
+
+      <!-- THE GIGANTIC ARTIST CUTOUT (SINGLE IMAGE, ABOVE ALL HERO ELEMENTS) -->
+      <div class="hero-artist-cutout">
+        <img src="assets/artist/moonlight-cutout.png" alt="Moonlight Afriqa" class="hero-slide-img active" id="hero-img-1" loading="eager">
+      </div>
+
+      <!-- ARTISTIC & LARGE ARTIST NAME ONLY (NO OTHER WRITING IN HERO) -->
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 w-full relative z-10 pointer-events-none">
+        <div class="max-w-xl">
+          <h1 class="hero-artist-name">
+            <span class="word-moonlight">MOONLIGHT</span>
+            <span class="word-afriqa">AFRIQA</span>
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ROW 1: TALES (PHASE EXACT ROW FORMAT) ================= -->
+    <section id="about" class="py-28 px-6 lg:px-12 max-w-[1400px] mx-auto phase-row" aria-label="Tales and Bio">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        
+        <!-- Col 1 (wvc-col-4 in Phase): Section Heading in Green with fullstop -->
+        <div class="lg:col-span-4">
+          <h2 class="section-title-phase text-[#2bfb9c]">
+            Tales.
+          </h2>
+        </div>
+
+        <!-- Col 2 & 3 (wvc-col-8 in Phase): Single Bio Writeup in White Font without Subheading -->
+        <div class="lg:col-span-8">
+          <p class="text-white font-body text-base sm:text-lg leading-relaxed font-light">
+            Known as one of the most prominent &ldquo;magic pens&rdquo; in the contemporary Afrobeats landscape, Moonlight Afriqa (born Imaekhai Richard Igebina) is a fast-rising Nigerian singer-songwriter and multi-instrumentalist whose sound seamlessly bridges Afrobeats, Afro-fusion, reggae, and alté. His stage moniker is deeply rooted in his native tongue, where &ldquo;Uki&rdquo; translates to &ldquo;Moonlight&rdquo;&mdash;symbolizing illumination, clarity, and raw artistic truth. With over 646,000 monthly listeners on Spotify and his breakout anthem &ldquo;SASEZOLA&rdquo; amassing over 7.1 million streams, Moonlight continues to enchant global audiences with poignant storytelling, infectious melodies, and an undeniable stage presence as he prepares to unveil his anticipated new single &ldquo;Blessed.&rdquo;
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= ROW 2: BLESSED SINGLE OUT NOW! (PHASE EXACT PARALLAX ROW) ================= -->
+    <section id="new-release" class="py-28 px-6 lg:px-12 bg-phase-astro phase-row relative overflow-hidden" aria-label="Blessed Single Out Now and Music Player">
+      <!-- Dark overlay matching Phase Theme -->
+      <div class="absolute inset-0 bg-black/75 backdrop-blur-[2px]"></div>
+
+      <div class="max-w-[1400px] mx-auto relative z-10">
+        
+        <!-- Section Heading -->
+        <div class="mb-14">
+          <h2 class="section-title-phase">
+            <span class="text-[#2bfb9c]">Blessed</span> single<br>
+            out now!
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          
+          <!-- Left Column (wvc-col-6 in Phase): Artwork with Always-Spinning Vinyl Disc & Action Buttons -->
+          <div class="lg:col-span-6 space-y-8">
+            
+            <!-- Vinyl Record Player Mockup (Always Spinning with Artist Image) -->
+            <div class="vinyl-record-player relative w-full max-w-sm sm:max-w-md mx-auto lg:mx-0 flex items-center mb-6">
+              <!-- Square Album Cover Sleeve -->
+              <div class="relative z-10 w-60 h-60 sm:w-72 sm:h-72 bg-neutral-900 border border-white/10 shadow-2xl flex-shrink-0 overflow-hidden">
+                <img src="assets/blessed-cover.jpg" alt="Blessed by Moonlight Afriqa Cover" class="w-full h-full object-cover">
+                <div class="absolute bottom-3 left-3 bg-black/90 px-3 py-1 text-[10px] font-heading font-bold uppercase tracking-widest text-[#2bfb9c] border border-white/10">
+                  Blessed &bull; Single
+                </div>
+              </div>
+              <!-- Spinning Vinyl Disc with Artist Center Artwork -->
+              <div class="absolute right-0 sm:-right-4 w-56 h-56 sm:w-68 sm:h-68 rounded-full shadow-2xl flex items-center justify-center z-0 animate-spin-vinyl pointer-events-none">
+                <img src="assets/blessed-vinyl.png" alt="Spinning Vinyl Disc" class="w-full h-full object-contain">
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap gap-4 pt-2">
+              <a href="blessed-single.html" class="btn-phase-primary">
+                Pre-Save &ldquo;Blessed&rdquo;
+              </a>
+              <a href="blessed-out-now.html" class="btn-phase-secondary">
+                Out Now &bull; Smart Link
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right Column (wvc-col-6 in Phase): Tracklist with Music Player Header -->
+          <div class="lg:col-span-6 space-y-3">
+            
+            <!-- Music Player Header Design (Phase Theme Exact Layout) -->
+            <div class="p-4 bg-black/80 border border-neutral-800 flex items-center justify-between gap-4 mb-3">
+              <div class="flex items-center space-x-3">
+                <button type="button" id="player-main-play-btn" aria-label="Play/Pause" class="w-10 h-10 rounded-full bg-[#2bfb9c] text-black hover:bg-[#22df89] flex items-center justify-center transition-colors shadow-lg">
+                  <i class="fa-solid fa-play ml-0.5 text-xs"></i>
+                </button>
+                <div>
+                  <h4 class="font-heading font-bold text-xs text-white uppercase tracking-wider">Blessed</h4>
+                  <span class="text-[10px] text-neutral-400 font-body">Moonlight Afriqa</span>
+                </div>
+              </div>
+              <div class="flex-1 max-w-xs mx-4 hidden sm:block">
+                <div class="w-full bg-neutral-800 h-1.5 rounded-full overflow-hidden">
+                  <div class="bg-[#2bfb9c] h-full w-2/5 rounded-full"></div>
+                </div>
+              </div>
+              <div class="text-right text-[11px] font-mono text-neutral-400">
+                <span>0:52 / 2:48</span>
+              </div>
+            </div>
+
+            <div class="pb-2 border-b border-neutral-800 flex items-center justify-between text-xs font-heading font-bold uppercase tracking-widest text-neutral-400">
+              <span>Tracklist &bull; Click Track For Services</span>
+              <span>Plays / Time</span>
+            </div>
+
+            <!-- Track 1: SASEZOLA -->
+            <div class="track-row p-4 border border-neutral-800/80 bg-neutral-900/60 flex items-center justify-between group cursor-pointer hover:border-[#2bfb9c]/50 transition-all open-services-modal-btn" data-song="SASEZOLA">
+              <div class="flex items-center space-x-4">
+                <span class="w-8 h-8 rounded-full bg-neutral-800 group-hover:bg-[#2bfb9c] group-hover:text-black flex items-center justify-center text-xs transition-colors">
+                  <i class="fa-solid fa-play ml-0.5"></i>
+                </span>
+                <div>
+                  <h4 class="font-heading font-bold text-sm text-white group-hover:text-[#2bfb9c] transition-colors">
+                    SASEZOLA
+                  </h4>
+                  <span class="text-xs text-neutral-400">Novex, Born Kxng, MOONLIGHT AFRIQA</span>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="text-xs font-heading font-bold text-[#2bfb9c] block">7.1M Plays</span>
+                <span class="text-xs text-neutral-500 font-mono">4:08</span>
+              </div>
+            </div>
+
+            <!-- Track 2: Love Dimension -->
+            <div class="track-row p-4 border border-neutral-800/80 bg-neutral-900/60 flex items-center justify-between group cursor-pointer hover:border-[#2bfb9c]/50 transition-all open-services-modal-btn" data-song="Love Dimension">
+              <div class="flex items-center space-x-4">
+                <span class="w-8 h-8 rounded-full bg-neutral-800 group-hover:bg-[#2bfb9c] group-hover:text-black flex items-center justify-center text-xs transition-colors">
+                  <i class="fa-solid fa-play ml-0.5"></i>
+                </span>
+                <div>
+                  <h4 class="font-heading font-bold text-sm text-white group-hover:text-[#2bfb9c] transition-colors">
+                    Love Dimension
+                  </h4>
+                  <span class="text-xs text-neutral-400">MOONLIGHT AFRIQA</span>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="text-xs font-heading font-bold text-[#2bfb9c] block">1.1M Plays</span>
+                <span class="text-xs text-neutral-500 font-mono">2:25</span>
+              </div>
+            </div>
+
+            <!-- Track 3: TRUE -->
+            <div class="track-row p-4 border border-neutral-800/80 bg-neutral-900/60 flex items-center justify-between group cursor-pointer hover:border-[#2bfb9c]/50 transition-all open-services-modal-btn" data-song="TRUE">
+              <div class="flex items-center space-x-4">
+                <span class="w-8 h-8 rounded-full bg-neutral-800 group-hover:bg-[#2bfb9c] group-hover:text-black flex items-center justify-center text-xs transition-colors">
+                  <i class="fa-solid fa-play ml-0.5"></i>
+                </span>
+                <div>
+                  <h4 class="font-heading font-bold text-sm text-white group-hover:text-[#2bfb9c] transition-colors">
+                    TRUE
+                  </h4>
+                  <span class="text-xs text-neutral-400">KAMAUU, MOONLIGHT AFRIQA</span>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="text-xs font-heading font-bold text-neutral-300 block">459K Plays</span>
+                <span class="text-xs text-neutral-500 font-mono">2:38</span>
+              </div>
+            </div>
+
+            <!-- Track 4: Lock Down (Kayamata) -->
+            <div class="track-row p-4 border border-neutral-800/80 bg-neutral-900/60 flex items-center justify-between group cursor-pointer hover:border-[#2bfb9c]/50 transition-all open-services-modal-btn" data-song="Lock Down (Kayamata)">
+              <div class="flex items-center space-x-4">
+                <span class="w-8 h-8 rounded-full bg-neutral-800 group-hover:bg-[#2bfb9c] group-hover:text-black flex items-center justify-center text-xs transition-colors">
+                  <i class="fa-solid fa-play ml-0.5"></i>
+                </span>
+                <div>
+                  <h4 class="font-heading font-bold text-sm text-white group-hover:text-[#2bfb9c] transition-colors">
+                    Lock Down (Kayamata)
+                  </h4>
+                  <span class="text-xs text-neutral-400">MOONLIGHT AFRIQA</span>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="text-xs font-heading font-bold text-neutral-300 block">104K Plays</span>
+                <span class="text-xs text-neutral-500 font-mono">2:06</span>
+              </div>
+            </div>
+
+            <!-- Track 5: Miracle -->
+            <div class="track-row p-4 border border-neutral-800/80 bg-neutral-900/60 flex items-center justify-between group cursor-pointer hover:border-[#2bfb9c]/50 transition-all open-services-modal-btn" data-song="Miracle">
+              <div class="flex items-center space-x-4">
+                <span class="w-8 h-8 rounded-full bg-neutral-800 group-hover:bg-[#2bfb9c] group-hover:text-black flex items-center justify-center text-xs transition-colors">
+                  <i class="fa-solid fa-play ml-0.5"></i>
+                </span>
+                <div>
+                  <h4 class="font-heading font-bold text-sm text-white group-hover:text-[#2bfb9c] transition-colors">
+                    Miracle
+                  </h4>
+                  <span class="text-xs text-neutral-400">MOONLIGHT AFRIQA</span>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="text-xs font-heading font-bold text-neutral-300 block">Viral Hit</span>
+                <span class="text-xs text-neutral-500 font-mono">2:22</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= ROW 3: LAST VIDEO (PHASE EXACT SPLIT FORMAT) ================= -->
+    <section id="video" class="py-28 px-6 lg:px-12 max-w-[1400px] mx-auto phase-row" aria-label="Last Video">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left Column (wvc-col-6 in Phase): Last Video Editorial -->
+        <div class="lg:col-span-6 space-y-6">
+          <h2 class="section-title-phase">
+            Last<br>
+            Video
+          </h2>
+          <p class="text-neutral-400 font-body text-base sm:text-lg leading-relaxed">
+            The official music video for &ldquo;Love Dimension&rdquo;. Captured with evocative cinematic direction, poetic lighting, and the distinct sonic penmanship of Moonlight Afriqa.
+          </p>
+          <div>
+            <a href="#video" class="btn-phase-secondary video-trigger" data-video-src="https://www.youtube-nocookie.com/embed/W5l-musI6pw?autoplay=1">
+              Watch Video
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column (wvc-col-6 in Phase): Video Box with Play Button -->
+        <div class="lg:col-span-6">
+          <div class="video-phase-box relative aspect-video border border-neutral-800 shadow-2xl group cursor-pointer video-trigger" data-video-src="https://www.youtube-nocookie.com/embed/W5l-musI6pw?autoplay=1">
+            <img src="assets/artist/unnamed-4-1152x1152.jpg" alt="Love Dimension Official Video" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+              <span class="w-16 h-16 rounded-full bg-[#2bfb9c] text-black flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-2xl">
+                <i class="fa-solid fa-play ml-1 text-base"></i>
+              </span>
+            </div>
+            <div class="absolute bottom-4 left-4 bg-black/80 px-3 py-1 text-xs font-heading font-bold uppercase text-white">
+              Love Dimension &bull; Official Video
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= ROW 4: LAST GALLERY (PHASE EXACT SPLIT FORMAT) ================= -->
+    <section id="gallery" class="py-28 px-6 lg:px-12 bg-[#121212] phase-row" aria-label="Last Gallery">
+      <div class="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left Column: 4 Photos Grid (Showing Moonlight Afriqa's Photos) -->
+        <div class="lg:col-span-7 grid grid-cols-2 gap-4">
+          <div class="aspect-square overflow-hidden border border-neutral-800 group">
+            <img src="assets/artist/unnamed-4-1152x1152.jpg" alt="Gallery Photo 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="aspect-square overflow-hidden border border-neutral-800 group">
+            <img src="assets/artist/a0605c14-b2a8-4919-afd9-7abee0f8c2c3.webp" alt="Gallery Photo 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="aspect-square overflow-hidden border border-neutral-800 group">
+            <img src="assets/artist/97b5d02d-8b72-4def-bde1-1012454a9815.webp" alt="Gallery Photo 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="aspect-square overflow-hidden border border-neutral-800 group">
+            <img src="assets/artist/42a78cc7-794f-42b6-b4d6-04df70252c84.webp" alt="Gallery Photo 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+        </div>
+
+        <!-- Right Column (wvc-col-5 in Phase): Editorial Text -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-heading uppercase tracking-widest text-[#2bfb9c] font-bold block">
+            Grid Full Width &bull; 16 Photos &bull; Moonlight Afriqa
+          </span>
+          <h2 class="section-title-phase">
+            Last<br>
+            Gallery
+          </h2>
+          <p class="text-neutral-400 font-body text-base leading-relaxed">
+            Intimate studio captures, live performance chronicles, and bespoke visual identity curated across Lagos, London, and international tour stages.
+          </p>
+          <div>
+            <a href="#gallery" class="btn-phase-secondary">
+              More Photos
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= ROW 5: UPCOMING SHOWS (PHASE EXACT ROW FORMAT) ================= -->
+    <section id="shows" class="py-28 px-6 lg:px-12 max-w-[1400px] mx-auto phase-row" aria-label="Upcoming Shows">
+      <div class="mb-14">
+        <h2 class="section-title-phase">
+          Upcoming<br>
+          Shows
+        </h2>
+      </div>
+
+      <div class="divide-y divide-neutral-800 border-y border-neutral-800">
+        
+        <!-- Show 1: London -->
+        <div class="py-7 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:bg-neutral-900/40 px-4 transition-colors">
+          <div class="flex items-center space-x-6 sm:space-x-10">
+            <div class="text-left w-16">
+              <span class="font-heading font-black text-xs text-[#2bfb9c] uppercase block">JUN</span>
+              <span class="font-heading font-black text-3xl text-white block leading-none">22</span>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-lg sm:text-xl text-white uppercase group-hover:text-[#2bfb9c] transition-colors">
+                London, United Kingdom
+              </h3>
+              <p class="text-xs text-neutral-400 font-body">O2 Academy Islington &bull; Special Headline Set</p>
+            </div>
+          </div>
+          <div>
+            <a href="mailto:booking@moonlightafrriqa.com?subject=Tickets%20London" class="btn-phase-primary">
+              Tickets
+            </a>
+          </div>
+        </div>
+
+        <!-- Show 2: Lagos -->
+        <div class="py-7 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:bg-neutral-900/40 px-4 transition-colors">
+          <div class="flex items-center space-x-6 sm:space-x-10">
+            <div class="text-left w-16">
+              <span class="font-heading font-black text-xs text-neutral-400 uppercase block">JUN</span>
+              <span class="font-heading font-black text-3xl text-white block leading-none">23</span>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-lg sm:text-xl text-white uppercase group-hover:text-[#2bfb9c] transition-colors">
+                Lagos, Nigeria
+              </h3>
+              <p class="text-xs text-neutral-400 font-body">Landmark Beach &bull; Homecoming Performance</p>
+            </div>
+          </div>
+          <div>
+            <a href="mailto:booking@moonlightafrriqa.com?subject=Tickets%20Lagos" class="btn-phase-secondary">
+              Tickets
+            </a>
+          </div>
+        </div>
+
+        <!-- Show 3: New York -->
+        <div class="py-7 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:bg-neutral-900/40 px-4 transition-colors">
+          <div class="flex items-center space-x-6 sm:space-x-10">
+            <div class="text-left w-16">
+              <span class="font-heading font-black text-xs text-neutral-400 uppercase block">JUN</span>
+              <span class="font-heading font-black text-3xl text-white block leading-none">29</span>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-lg sm:text-xl text-white uppercase group-hover:text-[#2bfb9c] transition-colors">
+                New York, NY
+              </h3>
+              <p class="text-xs text-neutral-400 font-body">Sony Hall, Manhattan &bull; Afro-Fusion Live</p>
+            </div>
+          </div>
+          <div>
+            <a href="mailto:booking@moonlightafrriqa.com?subject=Tickets%20New%20York" class="btn-phase-secondary">
+              Tickets
+            </a>
+          </div>
+        </div>
+
+        <!-- Show 4: Accra -->
+        <div class="py-7 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:bg-neutral-900/40 px-4 transition-colors">
+          <div class="flex items-center space-x-6 sm:space-x-10">
+            <div class="text-left w-16">
+              <span class="font-heading font-black text-xs text-neutral-400 uppercase block">JUN</span>
+              <span class="font-heading font-black text-3xl text-white block leading-none">30</span>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-lg sm:text-xl text-white uppercase group-hover:text-[#2bfb9c] transition-colors">
+                Accra, Ghana
+              </h3>
+              <p class="text-xs text-neutral-400 font-body">Untamed Empire &bull; West Africa Tour</p>
+            </div>
+          </div>
+          <div>
+            <a href="mailto:booking@moonlightafrriqa.com?subject=Tickets%20Accra" class="btn-phase-secondary">
+              Tickets
+            </a>
+          </div>
+        </div>
+
+        <!-- Show 5: Manchester -->
+        <div class="py-7 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:bg-neutral-900/40 px-4 transition-colors">
+          <div class="flex items-center space-x-6 sm:space-x-10">
+            <div class="text-left w-16">
+              <span class="font-heading font-black text-xs text-neutral-500 uppercase block">JUL</span>
+              <span class="font-heading font-black text-3xl text-neutral-500 block leading-none">01</span>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-lg sm:text-xl text-neutral-400 uppercase">
+                Manchester, United Kingdom
+              </h3>
+              <p class="text-xs text-neutral-500 font-body">Albert Hall</p>
+            </div>
+          </div>
+          <div>
+            <span class="inline-block px-6 py-3 bg-neutral-900 border border-neutral-800 text-neutral-500 font-heading font-bold text-[11px] uppercase tracking-widest">
+              Sold out!
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= ROW 6: LATEST NEWS (PHASE EXACT 3-COL BLOG FORMAT WITH PHOTOS) ================= -->
+    <section id="news" class="py-28 px-6 lg:px-12 bg-[#121212] phase-row" aria-label="Latest News">
+      <div class="max-w-[1400px] mx-auto">
+        
+        <div class="mb-14">
+          <h2 class="section-title-phase">
+            Latest<br>
+            News
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Post 1 with Photo (Phase Theme Exact Layout) -->
+          <article class="bg-[#181818] border border-neutral-800 overflow-hidden flex flex-col justify-between group">
+            <div>
+              <div class="aspect-video w-full overflow-hidden bg-neutral-900 border-b border-neutral-800">
+                <img src="assets/news-1.jpg" alt="Pre-Save Blessed" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              </div>
+              <div class="p-6 sm:p-8 space-y-3">
+                <div class="text-[10px] font-heading font-bold uppercase tracking-widest text-[#2bfb9c]">
+                  Release &bull; October 26, 2026
+                </div>
+                <h3 class="font-heading font-black text-xl uppercase tracking-wide text-white group-hover:text-[#2bfb9c] transition-colors leading-snug">
+                  <a href="#new-release">Pre-Save &ldquo;Blessed&rdquo; Officially Open</a>
+                </h3>
+                <p class="text-xs text-neutral-400 font-body leading-relaxed">
+                  The anticipated single &ldquo;Blessed&rdquo; is now open for pre-saving across Spotify, Apple Music, and all major platforms.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 sm:px-8 pb-6 sm:pb-8">
+              <a href="#new-release" class="inline-flex items-center gap-2 text-xs font-heading font-bold uppercase tracking-wider text-white hover:text-[#2bfb9c] transition-colors">
+                <span>Read More</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Post 2 with Photo -->
+          <article class="bg-[#181818] border border-neutral-800 overflow-hidden flex flex-col justify-between group">
+            <div>
+              <div class="aspect-video w-full overflow-hidden bg-neutral-900 border-b border-neutral-800">
+                <img src="assets/news-2.jpg" alt="Inside the Studio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              </div>
+              <div class="p-6 sm:p-8 space-y-3">
+                <div class="text-[10px] font-heading font-bold uppercase tracking-widest text-[#2bfb9c]">
+                  Editorial &bull; October 20, 2026
+                </div>
+                <h3 class="font-heading font-black text-xl uppercase tracking-wide text-white group-hover:text-[#2bfb9c] transition-colors leading-snug">
+                  <a href="#about">Inside the Studio with the &ldquo;Magic Pen&rdquo;</a>
+                </h3>
+                <p class="text-xs text-neutral-400 font-body leading-relaxed">
+                  An intimate look into how Moonlight Afriqa crafts his intricate lyricism, fusing Afrobeats, alté melodies, and spiritual resonance.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 sm:px-8 pb-6 sm:pb-8">
+              <a href="#about" class="inline-flex items-center gap-2 text-xs font-heading font-bold uppercase tracking-wider text-white hover:text-[#2bfb9c] transition-colors">
+                <span>Read More</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Post 3 with Photo -->
+          <article class="bg-[#181818] border border-neutral-800 overflow-hidden flex flex-col justify-between group">
+            <div>
+              <div class="aspect-video w-full overflow-hidden bg-neutral-900 border-b border-neutral-800">
+                <img src="assets/news-3.jpg" alt="SASEZOLA Streaming Milestone" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              </div>
+              <div class="p-6 sm:p-8 space-y-3">
+                <div class="text-[10px] font-heading font-bold uppercase tracking-widest text-[#2bfb9c]">
+                  Milestone &bull; October 12, 2026
+                </div>
+                <h3 class="font-heading font-black text-xl uppercase tracking-wide text-white group-hover:text-[#2bfb9c] transition-colors leading-snug">
+                  <a href="#new-release">SASEZOLA Crosses 7 Million Streams</a>
+                </h3>
+                <p class="text-xs text-neutral-400 font-body leading-relaxed">
+                  A monumental global streaming milestone as the breakthrough anthem continues to dominate charts across Africa, the UK, and Europe.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 sm:px-8 pb-6 sm:pb-8">
+              <a href="#new-release" class="inline-flex items-center gap-2 text-xs font-heading font-bold uppercase tracking-wider text-white hover:text-[#2bfb9c] transition-colors">
+                <span>Read More</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= ROW 7: NEW MERCH (PHASE EXACT PRODUCT ROW WITH ORIGINAL THEME BACKGROUND) ================= -->
+    <section id="merch" class="py-28 px-6 lg:px-12 bg-phase-merch phase-row relative overflow-hidden" aria-label="New Merch">
+      <!-- Dark overlay matching Phase Theme -->
+      <div class="absolute inset-0 bg-black/75 backdrop-blur-[1px]"></div>
+
+      <div class="max-w-[1400px] mx-auto relative z-10">
+        <div class="mb-14">
+          <h2 class="section-title-phase">
+            New<br>
+            Merch
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <!-- Product 1 -->
+          <article class="bg-[#181818]/90 border border-neutral-800 p-4 space-y-4 group">
+            <div class="aspect-square bg-neutral-900 overflow-hidden">
+              <img src="assets/artist/unnamed-4-1152x1152.jpg" alt="Blessed Tour Hoodie" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-sm uppercase text-white group-hover:text-[#2bfb9c] transition-colors">
+                &ldquo;Blessed&rdquo; Tour Hoodie
+              </h3>
+              <span class="text-sm font-heading font-bold text-[#2bfb9c] block mt-1">&pound;65.00</span>
+            </div>
+            <button type="button" class="w-full py-2.5 bg-neutral-800 hover:bg-[#2bfb9c] hover:text-black font-heading font-bold text-[10px] uppercase tracking-widest transition-colors">
+              Add to cart
+            </button>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="bg-[#181818]/90 border border-neutral-800 p-4 space-y-4 group">
+            <div class="aspect-square bg-neutral-900 overflow-hidden">
+              <img src="assets/artist/a0605c14-b2a8-4919-afd9-7abee0f8c2c3.webp" alt="Love Dimension Vinyl" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-sm uppercase text-white group-hover:text-[#2bfb9c] transition-colors">
+                &ldquo;Love Dimension&rdquo; Vinyl
+              </h3>
+              <span class="text-sm font-heading font-bold text-[#2bfb9c] block mt-1">&pound;35.00</span>
+            </div>
+            <button type="button" class="w-full py-2.5 bg-neutral-800 hover:bg-[#2bfb9c] hover:text-black font-heading font-bold text-[10px] uppercase tracking-widest transition-colors">
+              Add to cart
+            </button>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="bg-[#181818]/90 border border-neutral-800 p-4 space-y-4 group">
+            <div class="aspect-square bg-neutral-900 overflow-hidden">
+              <img src="assets/artist/97b5d02d-8b72-4def-bde1-1012454a9815.webp" alt="Magic Pen Graphic Tee" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-sm uppercase text-white group-hover:text-[#2bfb9c] transition-colors">
+                Magic Pen Graphic Tee
+              </h3>
+              <span class="text-sm font-heading font-bold text-[#2bfb9c] block mt-1">&pound;30.00</span>
+            </div>
+            <button type="button" class="w-full py-2.5 bg-neutral-800 hover:bg-[#2bfb9c] hover:text-black font-heading font-bold text-[10px] uppercase tracking-widest transition-colors">
+              Add to cart
+            </button>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="bg-[#181818]/90 border border-neutral-800 p-4 space-y-4 group">
+            <div class="aspect-square bg-neutral-900 overflow-hidden">
+              <img src="assets/artist/42a78cc7-794f-42b6-b4d6-04df70252c84.webp" alt="Moonlight Slipmat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-sm uppercase text-white group-hover:text-[#2bfb9c] transition-colors">
+                Turntable Slipmat Pair
+              </h3>
+              <span class="text-sm font-heading font-bold text-[#2bfb9c] block mt-1">&pound;20.00</span>
+            </div>
+            <button type="button" class="w-full py-2.5 bg-neutral-800 hover:bg-[#2bfb9c] hover:text-black font-heading font-bold text-[10px] uppercase tracking-widest transition-colors">
+              Add to cart
+            </button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+            Add to cart
+          </button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= ROW 8: INSTAGRAM / PHOTO STRIP (PHASE FULLWIDTH FORMAT) ================= -->
+    <section class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 border-y border-neutral-800" aria-label="Photo Stream">
+      <div class="aspect-square overflow-hidden group relative">
+        <img src="assets/artist/unnamed-4-1152x1152.jpg" alt="Stream 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <i class="fa-brands fa-instagram text-xl text-white"></i>
+        </div>
+      </div>
+      <div class="aspect-square overflow-hidden group relative">
+        <img src="assets/artist/a0605c14-b2a8-4919-afd9-7abee0f8c2c3.webp" alt="Stream 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <i class="fa-brands fa-instagram text-xl text-white"></i>
+        </div>
+      </div>
+      <div class="aspect-square overflow-hidden group relative">
+        <img src="assets/artist/97b5d02d-8b72-4def-bde1-1012454a9815.webp" alt="Stream 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <i class="fa-brands fa-instagram text-xl text-white"></i>
+        </div>
+      </div>
+      <div class="aspect-square overflow-hidden group relative">
+        <img src="assets/artist/42a78cc7-794f-42b6-b4d6-04df70252c84.webp" alt="Stream 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <i class="fa-brands fa-instagram text-xl text-white"></i>
+        </div>
+      </div>
+      <div class="aspect-square overflow-hidden group relative">
+        <img src="assets/artist/Screenshot 2026-10-26 155608.png" alt="Stream 5" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <i class="fa-brands fa-instagram text-xl text-white"></i>
+        </div>
+      </div>
+      <div class="aspect-square overflow-hidden group relative">
+        <img src="assets/artist/unnamed-4-1152x1152.jpg" alt="Stream 6" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <i class="fa-brands fa-instagram text-xl text-white"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ROW 9: MUSIC PARTNERS STRIP ================= -->
+    <section class="py-12 bg-[#0c0c0c] border-b border-neutral-800" aria-label="Music Platform Partners">
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-wrap items-center justify-between gap-8 opacity-60">
+        <span class="font-heading font-black text-sm tracking-widest uppercase">Spotify</span>
+        <span class="font-heading font-black text-sm tracking-widest uppercase">Apple Music</span>
+        <span class="font-heading font-black text-sm tracking-widest uppercase">YouTube Music</span>
+        <span class="font-heading font-black text-sm tracking-widest uppercase">Audiomack</span>
+        <span class="font-heading font-black text-sm tracking-widest uppercase">Boomplay</span>
+        <span class="font-heading font-black text-sm tracking-widest uppercase">Amazon Music</span>
+        <span class="font-heading font-black text-sm tracking-widest uppercase">Tidal</span>
+        <span class="font-heading font-black text-sm tracking-widest uppercase">Deezer</span>
+      </div>
+    </section>
+
+    <!-- ================= ROW 10: NEWSLETTER SIGN UP & FOOTER (PHASE EXACT FORMAT) ================= -->
+    <section class="py-28 px-6 lg:px-12 bg-[#101010]" aria-label="Newsletter">
+      <div class="max-w-2xl mx-auto text-center space-y-6">
+        <h2 class="section-title-phase">
+          Sign Up
+        </h2>
+        <p class="text-neutral-400 font-body text-sm">
+          Subscribe for exclusive &ldquo;Blessed&rdquo; tour presale access, secret studio previews, and direct alerts from Moonlight Afriqa.
+        </p>
+
+        <form id="newsletter-form" class="pt-4 flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
+          <input type="email" required placeholder="Enter your email address..." class="flex-1 px-5 py-3.5 bg-neutral-900 border border-neutral-700 focus:border-[#2bfb9c] focus:outline-none rounded-none text-xs text-white placeholder-neutral-500 font-body">
+          <button type="submit" class="btn-phase-primary">
+            Sign Up
+          </button>
+        </form>
+
+        <div id="newsletter-success" class="hidden text-[#2bfb9c] font-heading text-xs py-2 px-4 bg-[#2bfb9c]/10 border border-[#2bfb9c]/30">
+          <i class="fa-solid fa-check mr-2"></i> You are subscribed to Moonlight Afriqa updates!
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-[#080808] border-t border-neutral-900 text-neutral-400 font-body text-xs py-16 px-6 lg:px-12">
+    <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div>
+        <span class="font-brand-edgy text-2xl tracking-wider text-white">
+          MOONLIGHT AFRIQA<span class="text-[#2bfb9c]">.</span>
+        </span>
+        <p class="text-neutral-500 text-xs mt-1">
+          Management &amp; Worldwide Bookings: <a href="mailto:booking@moonlightafrriqa.com" class="text-white hover:text-[#2bfb9c] underline">booking@moonlightafrriqa.com</a>
+        </p>
+      </div>
+
+      <div class="flex items-center space-x-6 text-base text-neutral-400">
+        <a href="https://open.spotify.com" target="_blank" rel="noopener" aria-label="Spotify" class="hover:text-[#1DB954] transition-colors"><i class="fa-brands fa-spotify"></i></a>
+        <a href="https://music.apple.com" target="_blank" rel="noopener" aria-label="Apple Music" class="hover:text-[#FA243C] transition-colors"><i class="fa-brands fa-apple"></i></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="hover:text-pink-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube" class="hover:text-red-500 transition-colors"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <div class="text-center md:text-right text-[11px] text-neutral-500">
+        <p>&copy; 2026 Moonlight Afriqa. All Rights Reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= TRANSPARENT MUSIC SERVICES MODAL POPUP ================= -->
+  <div id="services-modal" class="modal-overlay fixed inset-0 bg-black/75 z-[85] flex items-center justify-center p-4 backdrop-blur-md" role="dialog" aria-modal="true" aria-label="Music Services Modal">
+    <div class="relative w-full max-w-md bg-[#121212]/90 backdrop-blur-2xl border border-white/10 p-6 sm:p-8 shadow-2xl space-y-6">
+      
+      <!-- Modal Close Button -->
+      <button id="close-services-modal" type="button" aria-label="Close Services Modal" class="absolute top-4 right-4 text-neutral-400 hover:text-white w-9 h-9 flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <!-- Header: Artwork + Track Info -->
+      <div class="flex items-center space-x-4 pr-8">
+        <div class="w-16 h-16 rounded-none overflow-hidden flex-shrink-0 border border-white/10 shadow-lg">
+          <img src="assets/blessed-cover.jpg" alt="Blessed" class="w-full h-full object-cover">
+        </div>
+        <div>
+          <span class="text-[10px] font-heading font-bold uppercase tracking-widest text-[#2bfb9c]">Now Streaming</span>
+          <h3 id="modal-song-title" class="font-heading font-bold text-lg text-white uppercase leading-snug">Blessed</h3>
+          <p class="text-xs text-neutral-400 font-body">Moonlight Afriqa</p>
+        </div>
+      </div>
+
+      <!-- 8 Music Platforms List with Icons, Names & Play Buttons -->
+      <div class="space-y-2.5 max-h-[60vh] overflow-y-auto pr-1">
+        
+        <!-- Spotify -->
+        <div class="flex items-center justify-between p-3 bg-white/[0.04] hover:bg-white/[0.08] border border-white/5 transition-all">
+          <div class="flex items-center space-x-3">
+            <i class="fa-brands fa-spotify text-xl text-[#1DB954]"></i>
+            <span class="font-heading font-bold text-xs uppercase tracking-wider text-white">Spotify</span>
+          </div>
+          <a href="https://open.spotify.com" target="_blank" rel="noopener" class="px-4 py-1.5 bg-[#1DB954] hover:bg-[#1ed760] text-black font-heading font-bold text-[10px] uppercase tracking-widest transition-all">
+            Play
+          </a>
+        </div>
+
+        <!-- Apple Music -->
+        <div class="flex items-center justify-between p-3 bg-white/[0.04] hover:bg-white/[0.08] border border-white/5 transition-all">
+          <div class="flex items-center space-x-3">
+            <i class="fa-brands fa-apple text-xl text-[#FA243C]"></i>
+            <span class="font-heading font-bold text-xs uppercase tracking-wider text-white">Apple Music</span>
+          </div>
+          <a href="https://music.apple.com" target="_blank" rel="noopener" class="px-4 py-1.5 bg-neutral-800 hover:bg-[#FA243C] text-white font-heading font-bold text-[10px] uppercase tracking-widest transition-all">
+            Play
+          </a>
+        </div>
+
+        <!-- YouTube Music -->
+        <div class="flex items-center justify-between p-3 bg-white/[0.04] hover:bg-white/[0.08] border border-white/5 transition-all">
+          <div class="flex items-center space-x-3">
+            <i class="fa-brands fa-youtube text-xl text-[#FF0000]"></i>
+            <span class="font-heading font-bold text-xs uppercase tracking-wider text-white">YouTube Music</span>
+          </div>
+          <a href="https://music.youtube.com" target="_blank" rel="noopener" class="px-4 py-1.5 bg-neutral-800 hover:bg-[#FF0000] text-white font-heading font-bold text-[10px] uppercase tracking-widest transition-all">
+            Play
+          </a>
+        </div>
+
+        <!-- Audiomack -->
+        <div class="flex items-center justify-between p-3 bg-white/[0.04] hover:bg-white/[0.08] border border-white/5 transition-all">
+          <div class="flex items-center space-x-3">
+            <span class="w-5 h-5 rounded-full bg-[#FFA200] text-black font-black text-[9px] flex items-center justify-center font-heading">AM</span>
+            <span class="font-heading font-bold text-xs uppercase tracking-wider text-white">Audiomack</span>
+          </div>
+          <a href="https://audiomack.com" target="_blank" rel="noopener" class="px-4 py-1.5 bg-neutral-800 hover:bg-[#FFA200] hover:text-black text-white font-heading font-bold text-[10px] uppercase tracking-widest transition-all">
+            Play
+          </a>
+        </div>
+
+        <!-- Boomplay -->
+        <div class="flex items-center justify-between p-3 bg-white/[0.04] hover:bg-white/[0.08] border border-white/5 transition-all">
+          <div class="flex items-center space-x-3">
+            <span class="w-5 h-5 rounded-full bg-[#00A3FF] text-white font-black text-[9px] flex items-center justify-center font-heading">BP</span>
+            <span class="font-heading font-bold text-xs uppercase tracking-wider text-white">Boomplay</span>
+          </div>
+          <a href="https://boomplay.com" target="_blank" rel="noopener" class="px-4 py-1.5 bg-neutral-800 hover:bg-[#00A3FF] text-white font-heading font-bold text-[10px] uppercase tracking-widest transition-all">
+            Play
+          </a>
+        </div>
+
+        <!-- Amazon Music -->
+        <div class="flex items-center justify-between p-3 bg-white/[0.04] hover:bg-white/[0.08] border border-white/5 transition-all">
+          <div class="flex items-center space-x-3">
+            <i class="fa-brands fa-amazon text-xl text-[#00A8E1]"></i>
+            <span class="font-heading font-bold text-xs uppercase tracking-wider text-white">Amazon Music</span>
+          </div>
+          <a href="https://music.amazon.com" target="_blank" rel="noopener" class="px-4 py-1.5 bg-neutral-800 hover:bg-[#00A8E1] text-white font-heading font-bold text-[10px] uppercase tracking-widest transition-all">
+            Play
+          </a>
+        </div>
+
+        <!-- Tidal -->
+        <div class="flex items-center justify-between p-3 bg-white/[0.04] hover:bg-white/[0.08] border border-white/5 transition-all">
+          <div class="flex items-center space-x-3">
+            <span class="w-5 h-5 rounded-full bg-cyan-400 text-black font-black text-[9px] flex items-center justify-center font-heading">TD</span>
+            <span class="font-heading font-bold text-xs uppercase tracking-wider text-white">Tidal</span>
+          </div>
+          <a href="https://tidal.com" target="_blank" rel="noopener" class="px-4 py-1.5 bg-neutral-800 hover:bg-cyan-400 hover:text-black text-white font-heading font-bold text-[10px] uppercase tracking-widest transition-all">
+            Play
+          </a>
+        </div>
+
+        <!-- Deezer -->
+        <div class="flex items-center justify-between p-3 bg-white/[0.04] hover:bg-white/[0.08] border border-white/5 transition-all">
+          <div class="flex items-center space-x-3">
+            <i class="fa-brands fa-deezer text-xl text-[#A238FF]"></i>
+            <span class="font-heading font-bold text-xs uppercase tracking-wider text-white">Deezer</span>
+          </div>
+          <a href="https://deezer.com" target="_blank" rel="noopener" class="px-4 py-1.5 bg-neutral-800 hover:bg-[#A238FF] text-white font-heading font-bold text-[10px] uppercase tracking-widest transition-all">
+            Play
+          </a>
+        </div>
+
+      </div>
+
+      <div class="text-center pt-2">
+        <span class="text-[10px] text-neutral-500 font-heading uppercase tracking-widest">Select your preferred music service</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= VIDEO MODAL POPUP ================= -->
+  <div id="video-modal" class="modal-overlay fixed inset-0 bg-black/90 z-[80] flex items-center justify-center p-4 backdrop-blur-md" role="dialog" aria-modal="true" aria-label="Video Player Modal">
+    <div class="relative w-full max-w-4xl bg-black overflow-hidden aspect-video border border-neutral-800 shadow-2xl">
+      <button id="close-modal" type="button" aria-label="Close Video Modal" class="absolute top-4 right-4 text-white/80 hover:text-white bg-black/60 w-10 h-10 flex items-center justify-center z-10 transition-colors">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+      <iframe id="modal-iframe" class="w-full h-full" src="" title="Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" type="button" aria-label="Back to Top" class="fixed bottom-6 right-6 z-40 w-11 h-11 bg-neutral-900 border border-neutral-700 hover:border-[#2bfb9c] text-white hover:text-[#2bfb9c] flex items-center justify-center shadow-xl opacity-0 invisible transition-all duration-300">
+    <i class="fa-solid fa-arrow-up text-xs"></i>
+  </button>
+
+  <!-- JavaScript Interactions -->
+  <script src="app.js"></script>
+</body>
+</html>

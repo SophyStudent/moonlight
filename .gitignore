@@ -1,0 +1,5 @@
+# Temporary and extract files
+stitch_blessed_song_landing_page.zip
+stitch_extracted/
+.DS_Store
+Thumbs.db

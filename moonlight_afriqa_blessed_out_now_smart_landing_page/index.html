@@ -1,0 +1,955 @@
+<!DOCTYPE html><html class="dark scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>MOONLIGHT AFRIQA — BLESSED (OUT NOW WORLDWIDE)</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Poppins:wght@400;600;700;800;900&amp;family=Raleway:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS with forms & container queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "deezer": "#a238ff",
+            "surface-dim": "#131313",
+            "on-primary-fixed": "#002110",
+            "phase-dark": "#121212",
+            "surface-container-high": "#2a2a2a",
+            "inverse-primary": "#006d3f",
+            "on-tertiary-fixed-variant": "#474746",
+            "on-tertiary-container": "#616060",
+            "background": "#131313",
+            "surface-variant": "#353534",
+            "phase-gray": "#181818",
+            "inverse-surface": "#e5e2e1",
+            "on-surface-variant": "#bacbbc",
+            "phase-accent-hover": "#22df89",
+            "error-container": "#93000a",
+            "tertiary": "#fcf8f8",
+            "youtube": "#ff0000",
+            "phase-light-gray": "#242424",
+            "apple-music": "#fa243c",
+            "primary-fixed": "#57ffa7",
+            "surface-container": "#201f1f",
+            "outline": "#849587",
+            "error": "#ffb4ab",
+            "on-secondary-fixed-variant": "#00522e",
+            "on-tertiary": "#313030",
+            "on-primary": "#00391e",
+            "surface-container-low": "#1c1b1b",
+            "phase-text-muted": "#888888",
+            "secondary-fixed": "#57ffa6",
+            "spotify": "#1db954",
+            "secondary": "#45f39b",
+            "on-error-container": "#ffdad6",
+            "on-background": "#e5e2e1",
+            "secondary-fixed-dim": "#28e28c",
+            "on-secondary-fixed": "#00210f",
+            "primary-fixed-dim": "#00e38a",
+            "phase-black": "#0c0c0c",
+            "audiomack": "#ffa200",
+            "on-tertiary-fixed": "#1c1b1b",
+            "amazon-music": "#00a8e1",
+            "on-secondary": "#00391e",
+            "surface-container-lowest": "#0e0e0e",
+            "surface-container-highest": "#353534",
+            "boomplay": "#00a3ff",
+            "phase-accent": "#2bfb9c",
+            "tidal": "#00ffff",
+            "inverse-on-surface": "#313030",
+            "surface-tint": "#00e38a",
+            "primary-container": "#2bfb9c",
+            "on-surface": "#e5e2e1",
+            "tertiary-fixed": "#e5e2e1",
+            "on-primary-fixed-variant": "#00522e",
+            "surface-bright": "#3a3939",
+            "on-error": "#690005",
+            "on-secondary-container": "#005731",
+            "tertiary-fixed-dim": "#c8c6c5",
+            "primary": "#e8ffeb",
+            "surface": "#131313",
+            "tertiary-container": "#dfdcdb",
+            "on-primary-container": "#006f41",
+            "secondary-container": "#04d681",
+            "outline-variant": "#3b4a3f"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-2xl": "5rem",
+            "margin-mobile": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-xl": "3rem",
+            "space-md": "1rem",
+            "space-lg": "1.75rem",
+            "space-section": "7rem",
+            "margin": "3rem",
+            "gutter-mobile": "1rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Syne"],
+            "headline-hero": ["Syne"],
+            "label-btn": ["Poppins"],
+            "headline-lg-mobile": ["Syne"],
+            "code-mono": ["JetBrains Mono"],
+            "body-lg": ["Raleway"],
+            "headline-sm": ["Poppins"],
+            "kicker": ["Poppins"],
+            "counter-display": ["Poppins"],
+            "headline-hero-mobile": ["Syne"],
+            "headline-md": ["Poppins"],
+            "body-md": ["Raleway"],
+            "body-sm": ["Raleway"]
+          },
+          "fontSize": {
+            "headline-lg": ["48px", { "lineHeight": "1.0", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "headline-hero": ["72px", { "lineHeight": "0.9", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "label-btn": ["11px", { "lineHeight": "1.0", "letterSpacing": "0.18em", "fontWeight": "800" }],
+            "headline-lg-mobile": ["32px", { "lineHeight": "1.05", "letterSpacing": "-0.01em", "fontWeight": "800" }],
+            "code-mono": ["12px", { "lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500" }],
+            "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.0em", "fontWeight": "400" }],
+            "headline-sm": ["18px", { "lineHeight": "1.3", "letterSpacing": "0.02em", "fontWeight": "700" }],
+            "kicker": ["11px", { "lineHeight": "1.2", "letterSpacing": "0.2em", "fontWeight": "800" }],
+            "counter-display": ["36px", { "lineHeight": "1.0", "letterSpacing": "-0.02em", "fontWeight": "900" }],
+            "headline-hero-mobile": ["40px", { "lineHeight": "0.95", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "headline-md": ["24px", { "lineHeight": "1.2", "letterSpacing": "0.0em", "fontWeight": "700" }],
+            "body-md": ["15px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "1.5", "letterSpacing": "0.01em", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    
+    @keyframes spin-vinyl {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    .animate-vinyl-spin {
+      animation: spin-vinyl 6s linear infinite;
+    }
+    
+    .animate-vinyl-paused {
+      animation-play-state: paused;
+    }
+
+    .mint-glow {
+      box-shadow: 0 4px 25px rgba(43, 251, 156, 0.28);
+    }
+    
+    .mint-glow-lg {
+      box-shadow: 0 8px 40px rgba(43, 251, 156, 0.35);
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #121212;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #2bfb9c;
+    }
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=New+Rocker&display=swap" rel="stylesheet">
+
+<style>
+  .font-brand-edgy, .hero-artist-font {
+    font-family: 'New Rocker', 'Bebas Neue', cursive, sans-serif !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+  }
+</style>
+
+</head>
+<body class="bg-phase-black text-on-surface antialiased overflow-x-hidden selection:bg-phase-accent selection:text-phase-black font-body-md text-body-md">
+<!-- ================= TOP APP BAR (ANCHOR COMPONENT) ================= -->
+<header class="docked full-width top-0 sticky z-50 bg-phase-black/90 dark:bg-phase-black/90 backdrop-blur-md border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-6 md:px-12 py-4 max-w-[1400px] mx-auto">
+<!-- Brand Logo Anchor -->
+<a class="flex items-center gap-2 group" href="index.html" title="Back to Moonlight Afriqa Homepage">
+<span class="font-brand-edgy font-headline-md text-headline-md tracking-tighter text-on-surface dark:text-on-surface font-black uppercase">
+          MOONLIGHT AFRIQA
+        </span>
+<span class="w-2.5 h-2.5 rounded-full bg-phase-accent animate-pulse shadow-[0_0_8px_#2bfb9c]"></span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-phase-accent dark:text-phase-accent border-b-2 border-phase-accent pb-1 font-bold font-kicker text-kicker uppercase tracking-widest transition-all" href="#stream-links">
+          Stream
+        </a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors font-kicker text-kicker uppercase tracking-widest" href="#music-video">
+          Music Video
+        </a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors font-kicker text-kicker uppercase tracking-widest" href="#lyrics-section">
+          Lyrics &amp; Meaning
+        </a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors font-kicker text-kicker uppercase tracking-widest" href="#tour-dates">
+          Tour Dates
+        </a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors font-kicker text-kicker uppercase tracking-widest" href="#merch-section">
+          Merch
+        </a>
+</nav>
+<!-- Action Cluster -->
+<div class="flex items-center gap-4">
+<button aria-label="Audio Preview" class="p-2 text-on-surface-variant hover:text-phase-accent transition-all duration-150 active:scale-95 flex items-center justify-center" id="header-audio-toggle" title="Audio Preview">
+<span class="material-symbols-outlined" data-icon="graphic_eq">graphic_eq</span>
+</button>
+<button aria-label="Share" class="p-2 text-on-surface-variant hover:text-phase-accent transition-all duration-150 active:scale-95 flex items-center justify-center" onclick="navigator.clipboard?.writeText(window.location.href); alert('Link copied to clipboard!');" title="Share Single">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+<a class="inline-flex items-center justify-center bg-phase-accent text-on-primary-fixed px-5 py-2.5 font-label-btn text-label-btn tracking-wider uppercase font-extrabold hover:bg-white transition-all duration-150 mint-glow active:scale-95" href="#stream-links">
+          STREAM BLESSED
+        </a>
+</div>
+</div>
+</header>
+<main>
+<!-- ================= 1. EXPLOSIVE HERO SECTION ("OUT NOW EVERYWHERE") ================= -->
+<section class="relative min-h-[90vh] flex items-center pt-8 pb-16 overflow-hidden border-b border-white/5">
+<!-- Ambient Studio Glow & Backdrop -->
+<div class="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-phase-accent/10 via-phase-black/60 to-phase-black z-0"></div>
+<!-- Neon Brush Background Accent -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[1200px] h-[340px] opacity-15 pointer-events-none z-0 mix-blend-screen scale-125">
+<img alt="Neon green painted texture splash" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMTtpuUg9kvfbcOHsrMySKO3q6D49W0Err4s_XfpChsDAMml-1PZTCuOgLLwLeiWlkiAquiyCBru93LoM5Rw_Ym70KYLNBRRQbbUkr8EQVWi5G503ue5UhhLPpGQ06w6PRX3kM76TUB0t4usziA4b-9if6wgv85rs8VndcPsBsLrHz5npXwYd-4s4clFG3qMotJu84dB9Z5q_IwopQqwCUxb_1XaI7PSnB_hVG_nksigrxK_r86kxILA">
+</div>
+<div class="relative z-10 w-full max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Left: Monumental Hero Copy (7 cols) -->
+<div class="lg:col-span-7 flex flex-col justify-center">
+<!-- Live Status Badge -->
+<div class="inline-flex items-center gap-3 bg-phase-dark border border-outline-variant/40 px-3.5 py-1.5 w-fit mb-6 shadow-xl">
+<span class="w-2.5 h-2.5 rounded-full bg-phase-accent animate-ping"></span>
+<span class="font-kicker text-kicker uppercase tracking-widest text-phase-accent font-extrabold">NOW STREAMING WORLDWIDE</span>
+<span class="text-phase-text-muted text-xs">•</span>
+<span class="font-code-mono text-code-mono text-on-surface-variant uppercase">GLOBAL RELEASE DROP</span>
+</div>
+<!-- Monumental Headline -->
+<h1 class="font-headline-hero text-headline-hero md:text-[88px] text-white font-extrabold tracking-tight uppercase leading-[0.88] mb-3">
+            BLESSED
+          </h1>
+<!-- Sub-headline & Tagline -->
+<div class="flex items-center gap-3 mb-6">
+<span class="font-brand-edgy font-headline-md text-headline-md text-phase-accent uppercase font-bold tracking-tight">MOONLIGHT AFRIQA</span>
+
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-8 leading-relaxed">
+            The transcendent afro-fusion anthem is officially live across all digital DSPs. Produced by Cosmos Music &amp; Phase Soundworks. Turn the volume up, feel the grace, and walk in victory.
+          </p>
+<!-- Primary Hero Actions -->
+<div class="flex flex-wrap items-center gap-4 mb-12">
+<a class="inline-flex items-center justify-center gap-2 bg-phase-accent text-phase-black hover:bg-white px-8 py-4 font-label-btn text-label-btn uppercase font-extrabold tracking-widest transition-all duration-150 mint-glow hover:shadow-[0_8px_30px_rgba(255,255,255,0.35)] active:scale-95" href="#stream-links">
+<span class="material-symbols-outlined text-lg" data-icon="play_arrow" data-weight="fill">play_arrow</span>
+              STREAM NOW
+            </a>
+<a class="inline-flex items-center justify-center gap-2 bg-transparent border border-white/30 text-white hover:border-phase-accent hover:text-phase-accent hover:bg-phase-accent/5 px-7 py-4 font-label-btn text-label-btn uppercase font-extrabold tracking-widest transition-all duration-150 active:scale-95" href="#music-video">
+<span class="material-symbols-outlined text-lg" data-icon="movie">movie</span>
+              WATCH OFFICIAL VIDEO
+            </a>
+</div>
+<!-- Live Global Milestones Ticker -->
+<div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 max-w-lg">
+<div>
+<div class="font-headline-md text-headline-md text-white font-extrabold tracking-tight">125K+</div>
+<div class="font-kicker text-kicker uppercase text-phase-text-muted mt-1">Streams in First 24H</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-phase-accent font-extrabold tracking-tight">#1</div>
+<div class="font-kicker text-kicker uppercase text-phase-text-muted mt-1">Trending Afro Debut</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-white font-extrabold tracking-tight">18+</div>
+<div class="font-kicker text-kicker uppercase text-phase-text-muted mt-1">Editorial Playlists</div>
+</div>
+</div>
+</div>
+<!-- Right: Analog Vinyl Presentation & Sleeve Display (5 cols) -->
+<div class="lg:col-span-5 flex justify-center items-center relative select-none">
+<div class="relative w-[300px] sm:w-[360px] md:w-[420px] aspect-square flex items-center justify-center">
+<!-- Vinyl Record (Layered Behind Sleeve with CSS spin) -->
+<div class="absolute w-[290px] sm:w-[350px] md:w-[390px] aspect-square rounded-full transition-all duration-700 ease-out translate-x-14 md:translate-x-24 shadow-2xl animate-vinyl-spin z-10" id="hero-vinyl">
+<img alt="Blessed Vinyl Disc with custom label" class="w-full h-full object-contain filter drop-shadow-[0_15px_35px_rgba(0,0,0,0.9)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB03RKYUQDI3qNqRmVUQoUVlKMYTLWWWm72HVWo2CqBplaI-QsnQGl8jnRgh1Wb6y2IvUIS98EqgkV2nOAvxfgc-7gvZnyJ0iUuxl2d6QVGaeFZZBf2tcqaEgOZtgUvMWorPJjzQA67uRtFYrD1eAeBaLFhjTnqur4Tkl2rouR6IbbuG2aZMYClYCoX4RDx4i2_KQzXU12Jbh6h_bNP5K8petRXfFrnxXi6E535Dk0BR4v87VlyXZGguw">
+</div>
+<!-- Single Album Cover Sleeve (Front Layer) -->
+<div class="relative z-20 w-[270px] sm:w-[330px] md:w-[370px] aspect-square bg-phase-gray border border-white/15 shadow-[0_25px_60px_rgba(0,0,0,0.95)] overflow-hidden group">
+<img alt="Moonlight Afriqa Blessed Single Artwork" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYMjfhxqbCq3wF6wah2u1M52eJ0LjLovRKQ6LxlGX5Crt86bWEE_SYuMAVAkd6HWxYaABBpLDax9gZqlfp4gDorHNjEUp6ScgP8RC2fSg_jZ4MMtCsBEeXT1P4Tnsskes6h09iMrKJ8zwO_RvmBdz-harKJ250Yls2tCdc-jN0EvzZK4ceQr3vuloyB6S10IrSBCcO5qvI6P8PImHxlrOc-tQCvTiGZb4uBzP8xocLH8maPJJiJ_J9DA">
+<!-- Analog Sleeve Badge -->
+<div class="absolute bottom-3 left-3 bg-phase-black/85 backdrop-blur-md px-3 py-1 border border-white/10 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-phase-accent"></span>
+<span class="font-code-mono text-[11px] text-white uppercase tracking-wider font-bold">45 RPM • DOLBY MASTER</span>
+</div>
+</div>
+<!-- Interactive Vinyl Toggle Cue -->
+<button class="absolute -bottom-6 right-6 md:right-10 z-30 bg-phase-accent text-phase-black px-4 py-2 font-kicker text-kicker uppercase tracking-widest font-extrabold shadow-lg hover:bg-white transition-all flex items-center gap-2" id="vinyl-spin-btn">
+<span class="material-symbols-outlined text-sm" data-icon="album" data-weight="fill">album</span>
+<span class="">PAUSE ROTATION</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 2. STREAM ON YOUR FAVORITE PLATFORM (SMART-LINK MATRIX) ================= -->
+<section class="py-24 bg-phase-dark border-b border-white/5 relative" id="stream-links">
+<div class="max-w-[1400px] mx-auto px-6 md:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<div class="font-kicker text-kicker uppercase tracking-widest text-phase-accent font-extrabold mb-2">DIRECT ACCESS PLATFORMS</div>
+<h2 class="font-headline-lg text-headline-lg text-white font-extrabold uppercase tracking-tight">STREAM ON YOUR FAVORITE SERVICE</h2>
+</div>
+<p class="font-body-md text-body-md text-phase-text-muted max-w-md">
+            Click any platform below to launch high-fidelity playback immediately in your desktop or mobile music player.
+          </p>
+</div>
+<!-- 8 Streaming Platform Cards (Grid) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Spotify -->
+<div class="group bg-phase-gray border border-white/10 p-5 flex flex-col justify-between hover:border-spotify/60 hover:bg-white/[0.02] transition-all duration-150">
+<div class="flex items-center justify-between mb-8">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-spotify/15 flex items-center justify-center text-spotify font-bold text-xl">
+<span class="material-symbols-outlined" data-icon="radio">radio</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-white font-bold leading-tight">Spotify</h3>
+<span class="font-code-mono text-code-mono text-phase-text-muted">Available Worldwide</span>
+</div>
+</div>
+<span class="bg-spotify/20 text-spotify font-code-mono text-[10px] px-2 py-0.5 font-bold uppercase">Popular</span>
+</div>
+<a class="w-full text-center bg-spotify text-black font-label-btn text-label-btn uppercase py-3 font-extrabold tracking-widest group-hover:brightness-110 transition-all flex items-center justify-center gap-2" href="https://open.spotify.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="play_arrow" data-weight="fill">play_arrow</span>
+              STREAM NOW
+            </a>
+</div>
+<!-- Apple Music -->
+<div class="group bg-phase-gray border border-white/10 p-5 flex flex-col justify-between hover:border-apple-music/60 hover:bg-white/[0.02] transition-all duration-150">
+<div class="flex items-center justify-between mb-8">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-apple-music/15 flex items-center justify-center text-apple-music font-bold text-xl">
+<span class="material-symbols-outlined" data-icon="music_note">music_note</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-white font-bold leading-tight">Apple Music</h3>
+<span class="font-code-mono text-code-mono text-phase-text-muted">Spatial Audio • Lossless</span>
+</div>
+</div>
+<span class="bg-apple-music/20 text-apple-music font-code-mono text-[10px] px-2 py-0.5 font-bold uppercase">Dolby</span>
+</div>
+<a class="w-full text-center bg-apple-music text-white font-label-btn text-label-btn uppercase py-3 font-extrabold tracking-widest group-hover:brightness-110 transition-all flex items-center justify-center gap-2" href="https://music.apple.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="headphones">headphones</span>
+              LISTEN
+            </a>
+</div>
+<!-- YouTube Music -->
+<div class="group bg-phase-gray border border-white/10 p-5 flex flex-col justify-between hover:border-youtube/60 hover:bg-white/[0.02] transition-all duration-150">
+<div class="flex items-center justify-between mb-8">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-youtube/15 flex items-center justify-center text-youtube font-bold text-xl">
+<span class="material-symbols-outlined" data-icon="smart_display">smart_display</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-white font-bold leading-tight">YouTube</h3>
+<span class="font-code-mono text-code-mono text-phase-text-muted">Audio + Video Visual</span>
+</div>
+</div>
+</div>
+<a class="w-full text-center bg-youtube text-white font-label-btn text-label-btn uppercase py-3 font-extrabold tracking-widest group-hover:brightness-110 transition-all flex items-center justify-center gap-2" href="https://youtube.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="videocam">videocam</span>
+              WATCH &amp; LISTEN
+            </a>
+</div>
+<!-- Audiomack -->
+<div class="group bg-phase-gray border border-white/10 p-5 flex flex-col justify-between hover:border-audiomack/60 hover:bg-white/[0.02] transition-all duration-150">
+<div class="flex items-center justify-between mb-8">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-audiomack/15 flex items-center justify-center text-audiomack font-bold text-xl">
+<span class="material-symbols-outlined" data-icon="bolt">bolt</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-white font-bold leading-tight">Audiomack</h3>
+<span class="font-code-mono text-code-mono text-phase-text-muted">Free Streaming</span>
+</div>
+</div>
+</div>
+<a class="w-full text-center bg-audiomack text-black font-label-btn text-label-btn uppercase py-3 font-extrabold tracking-widest group-hover:brightness-110 transition-all flex items-center justify-center gap-2" href="https://audiomack.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="stream">stream</span>
+              STREAM
+            </a>
+</div>
+<!-- Boomplay -->
+<div class="group bg-phase-gray border border-white/10 p-5 flex flex-col justify-between hover:border-boomplay/60 hover:bg-white/[0.02] transition-all duration-150">
+<div class="flex items-center justify-between mb-8">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-boomplay/15 flex items-center justify-center text-boomplay font-bold text-xl">
+<span class="material-symbols-outlined" data-icon="graphic_eq">graphic_eq</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-white font-bold leading-tight">Boomplay</h3>
+<span class="font-code-mono text-code-mono text-phase-text-muted">Africa's #1 Music App</span>
+</div>
+</div>
+</div>
+<a class="w-full text-center bg-boomplay text-white font-label-btn text-label-btn uppercase py-3 font-extrabold tracking-widest group-hover:brightness-110 transition-all flex items-center justify-center gap-2" href="https://boomplay.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="play_circle">play_circle</span>
+              PLAY
+            </a>
+</div>
+<!-- Amazon Music -->
+<div class="group bg-phase-gray border border-white/10 p-5 flex flex-col justify-between hover:border-amazon-music/60 hover:bg-white/[0.02] transition-all duration-150">
+<div class="flex items-center justify-between mb-8">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-amazon-music/15 flex items-center justify-center text-amazon-music font-bold text-xl">
+<span class="material-symbols-outlined" data-icon="volume_up">volume_up</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-white font-bold leading-tight">Amazon Music</h3>
+<span class="font-code-mono text-code-mono text-phase-text-muted">HD Audio</span>
+</div>
+</div>
+</div>
+<a class="w-full text-center bg-amazon-music text-white font-label-btn text-label-btn uppercase py-3 font-extrabold tracking-widest group-hover:brightness-110 transition-all flex items-center justify-center gap-2" href="https://music.amazon.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="headphones">headphones</span>
+              LISTEN
+            </a>
+</div>
+<!-- Tidal -->
+<div class="group bg-phase-gray border border-white/10 p-5 flex flex-col justify-between hover:border-tidal/60 hover:bg-white/[0.02] transition-all duration-150">
+<div class="flex items-center justify-between mb-8">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tidal/15 flex items-center justify-center text-tidal font-bold text-xl">
+<span class="material-symbols-outlined" data-icon="equalizer">equalizer</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-white font-bold leading-tight">Tidal</h3>
+<span class="font-code-mono text-code-mono text-phase-text-muted">Max FLAC 24-bit 192kHz</span>
+</div>
+</div>
+</div>
+<a class="w-full text-center bg-tidal text-black font-label-btn text-label-btn uppercase py-3 font-extrabold tracking-widest group-hover:brightness-110 transition-all flex items-center justify-center gap-2" href="https://tidal.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="high_quality">high_quality</span>
+              HI-RES LOSSLESS
+            </a>
+</div>
+<!-- Deezer -->
+<div class="group bg-phase-gray border border-white/10 p-5 flex flex-col justify-between hover:border-deezer/60 hover:bg-white/[0.02] transition-all duration-150">
+<div class="flex items-center justify-between mb-8">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-deezer/15 flex items-center justify-center text-deezer font-bold text-xl">
+<span class="material-symbols-outlined" data-icon="library_music">library_music</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-white font-bold leading-tight">Deezer</h3>
+<span class="font-code-mono text-code-mono text-phase-text-muted">HiFi Sound Quality</span>
+</div>
+</div>
+</div>
+<a class="w-full text-center bg-deezer text-white font-label-btn text-label-btn uppercase py-3 font-extrabold tracking-widest group-hover:brightness-110 transition-all flex items-center justify-center gap-2" href="https://deezer.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="play_arrow" data-weight="fill">play_arrow</span>
+              LISTEN
+            </a>
+</div>
+</div>
+<!-- Quick Universal Utility Bar -->
+<div class="mt-8 p-4 bg-phase-light-gray/40 border border-white/5 flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-phase-accent" data-icon="check_circle">check_circle</span>
+<span class="font-body-sm text-body-sm text-white">Smart-Link resolved via Phase Universal API (Global Master ID: #BLS-2024-AFR)</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:text-white font-code-mono text-code-mono uppercase flex items-center gap-1.5 transition-colors" onclick="navigator.clipboard?.writeText(window.location.href); alert('Track link copied to clipboard!');">
+<span class="material-symbols-outlined text-sm" data-icon="content_copy">content_copy</span> Copy Smartlink
+            </button>
+<span class="text-white/20">|</span>
+<button class="text-phase-accent hover:text-white font-code-mono text-code-mono uppercase flex items-center gap-1.5 transition-colors" onclick="alert('Track added to your default web library preferences.');">
+<span class="material-symbols-outlined text-sm" data-icon="bookmark_add">bookmark_add</span> Add to Library
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 3. OFFICIAL MUSIC VIDEO PREMIERE ================= -->
+<section class="py-24 border-b border-white/5 relative" id="music-video">
+<div class="max-w-[1400px] mx-auto px-6 md:px-12">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<div class="inline-flex items-center gap-2 bg-phase-dark border border-white/10 px-3 py-1 font-kicker text-kicker uppercase tracking-widest text-phase-accent font-extrabold mb-3">
+<span class="w-2 h-2 rounded-full bg-youtube"></span>
+            OFFICIAL VISUAL PREMIERE • 4K DOLBY ATMOS
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-white font-extrabold uppercase tracking-tight mb-4">
+            BLESSED — OFFICIAL MUSIC VIDEO
+          </h2>
+<p class="font-body-md text-body-md text-phase-text-muted">
+            Directed across vibrant nocturnal locations in Lagos and London, capturing resilience, gratitude, and artistic triumph against all odds.
+          </p>
+</div>
+<!-- Cinema Player Container -->
+<div class="relative w-full max-w-5xl mx-auto aspect-video bg-phase-dark border border-white/15 overflow-hidden group shadow-[0_20px_60px_rgba(0,0,0,0.9)]">
+<!-- Video Cover Poster with Play Trigger -->
+<div class="w-full h-full bg-cover bg-center flex items-center justify-center relative cursor-pointer" data-alt="A cinematic widescreen still of Moonlight Afriqa performing under deep dramatic nocturnal stage lights in Lagos with mint neon green accent highlights. Atmospheric smoke, high fashion tailoring, and expressive raw performance energy with cinematic lens flares." onclick="this.innerHTML = '&lt;iframe class=\'w-full h-full\' src=\'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1\' title=\'Moonlight Afriqa - Blessed\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen&gt;&lt;/iframe&gt;'" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuC09gc_LeT3Vx9PwVH03zaZPE2pEVu1agjWAo1hBflQtmKSHCX1guESvRqef-mVkQC5xnyjTekEwzoh0HpyEQ5hKYW_ffaecVDCjbowNQyhYu-WRliJfNvekLwbkwIPkn8AJCstMUwty1W6GNwn-eroJmOEaEnnv68DLD_Ojirz2PScJw82WoV5kQ13QBRcUiZKpIuoKIT_lhrFj6pCJDwJdGEWcmRYL99bHK60JkKZmymq3P0R1VkQwg&quot;);">
+<div class="absolute inset-0 bg-phase-black/40 group-hover:bg-phase-black/20 transition-all"></div>
+<!-- Central Huge Play Button -->
+<div class="relative z-10 w-24 h-24 rounded-full bg-phase-accent text-phase-black flex items-center justify-center mint-glow-lg group-hover:scale-110 transition-all duration-300">
+<span class="material-symbols-outlined text-5xl translate-x-1" data-icon="play_arrow" data-weight="fill">play_arrow</span>
+</div>
+<!-- Bottom Left Metadata Overlay -->
+<div class="absolute bottom-6 left-6 z-10 bg-phase-black/80 backdrop-blur-md border border-white/10 px-4 py-2 hidden sm:block">
+<p class="font-headline-sm text-headline-sm text-white font-bold leading-tight">MOONLIGHT AFRIQA — BLESSED (Official Video)</p>
+<p class="font-code-mono text-code-mono text-phase-accent">Dir. Director DK • Lagos / London 2024</p>
+</div>
+<div class="absolute top-6 right-6 z-10 bg-red-600/90 text-white font-code-mono text-xs px-3 py-1 font-bold tracking-widest uppercase flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-white animate-ping"></span> LIVE ON YOUTUBE
+            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 4. INTERACTIVE TRACK PLAYER & KARAOKE LYRICS ================= -->
+<section class="py-24 bg-phase-dark border-b border-white/5 relative" id="lyrics-section">
+<div class="max-w-[1400px] mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left: Audio Player Module & Vinyl Teaser Controller (5 cols) -->
+<div class="lg:col-span-5 bg-phase-gray border border-white/10 p-6 md:p-8">
+<div class="flex items-center justify-between pb-6 mb-6 border-b border-white/10">
+<div>
+<span class="font-kicker text-kicker uppercase tracking-widest text-phase-accent font-extrabold">NOW PLAYING PREVIEW</span>
+<h3 class="font-headline-md text-headline-md text-white font-bold">BLESSED</h3>
+<p class="font-body-sm text-body-sm text-phase-text-muted">Moonlight Afriqa • 108 BPM • Key: F# Minor</p>
+</div>
+<span class="material-symbols-outlined text-3xl text-phase-accent" data-icon="graphic_eq">graphic_eq</span>
+</div>
+<!-- Waveform Visualizer Simulation -->
+<div class="h-20 bg-phase-black border border-white/5 p-3 flex items-end gap-1.5 mb-6 overflow-hidden">
+<div class="w-1 bg-phase-accent h-4/6 animate-pulse"></div>
+<div class="w-1 bg-phase-accent h-5/6 animate-pulse" style="animation-delay: 100ms"></div>
+<div class="w-1 bg-phase-accent h-3/6 animate-pulse" style="animation-delay: 200ms"></div>
+<div class="w-1 bg-white h-6/6 animate-pulse" style="animation-delay: 300ms"></div>
+<div class="w-1 bg-phase-accent h-2/6 animate-pulse" style="animation-delay: 150ms"></div>
+<div class="w-1 bg-phase-accent h-5/6 animate-pulse" style="animation-delay: 250ms"></div>
+<div class="w-1 bg-white h-4/6 animate-pulse" style="animation-delay: 350ms"></div>
+<div class="w-1 bg-phase-accent h-6/6 animate-pulse" style="animation-delay: 100ms"></div>
+<div class="w-1 bg-phase-accent h-3/6 animate-pulse" style="animation-delay: 400ms"></div>
+<div class="w-1 bg-white h-5/6 animate-pulse" style="animation-delay: 200ms"></div>
+<div class="w-1 bg-phase-accent h-4/6 animate-pulse" style="animation-delay: 300ms"></div>
+<div class="w-1 bg-phase-accent h-6/6 animate-pulse" style="animation-delay: 150ms"></div>
+<div class="w-1 bg-phase-accent h-2/6 animate-pulse" style="animation-delay: 250ms"></div>
+<div class="w-1 bg-white h-5/6 animate-pulse" style="animation-delay: 350ms"></div>
+<div class="w-1 bg-phase-accent h-6/6 animate-pulse" style="animation-delay: 100ms"></div>
+<div class="w-1 bg-phase-accent h-3/6 animate-pulse" style="animation-delay: 200ms"></div>
+<div class="w-1 bg-white h-4/6 animate-pulse" style="animation-delay: 300ms"></div>
+<div class="w-1 bg-phase-accent h-5/6 animate-pulse" style="animation-delay: 150ms"></div>
+<div class="w-1 bg-phase-accent h-2/6 animate-pulse" style="animation-delay: 250ms"></div>
+<div class="w-1 bg-white h-6/6 animate-pulse" style="animation-delay: 350ms"></div>
+<div class="w-1 bg-phase-accent h-3/6 animate-pulse" style="animation-delay: 100ms"></div>
+<div class="w-1 bg-phase-accent h-5/6 animate-pulse" style="animation-delay: 400ms"></div>
+<div class="w-1 bg-phase-accent h-4/6 animate-pulse" style="animation-delay: 200ms"></div>
+<div class="w-1 bg-white h-2/6 animate-pulse" style="animation-delay: 300ms"></div>
+<div class="w-1 bg-phase-accent h-6/6 animate-pulse" style="animation-delay: 150ms"></div>
+<div class="w-1 bg-phase-accent h-4/6 animate-pulse" style="animation-delay: 250ms"></div>
+</div>
+<!-- Scrubber -->
+<div class="mb-4">
+<div class="relative w-full h-1.5 bg-phase-light-gray cursor-pointer group" id="audio-scrubber">
+<div class="absolute left-0 top-0 bottom-0 bg-phase-accent w-2/5 group-hover:bg-white transition-all"></div>
+<div class="absolute left-2/5 -top-1.5 w-4 h-4 rounded-full bg-phase-accent shadow-[0_0_10px_#2bfb9c] -translate-x-1/2"></div>
+</div>
+<div class="flex justify-between font-code-mono text-code-mono text-phase-text-muted mt-2">
+<span class="">01:22</span>
+<span class="">03:24</span>
+</div>
+</div>
+<!-- Player Controls -->
+<div class="flex items-center justify-between pt-2">
+<button aria-label="Repeat" class="text-on-surface-variant hover:text-white transition-colors" title="Repeat">
+<span class="material-symbols-outlined" data-icon="repeat">repeat</span>
+</button>
+<div class="flex items-center gap-6">
+<button aria-label="Previous" class="text-on-surface-variant hover:text-white transition-colors" title="Previous">
+<span class="material-symbols-outlined text-2xl" data-icon="skip_previous">skip_previous</span>
+</button>
+<button aria-label="Play" class="w-14 h-14 rounded-full bg-phase-accent text-phase-black flex items-center justify-center hover:bg-white transition-all mint-glow" id="main-play-btn">
+<span class="material-symbols-outlined text-3xl translate-x-0.5" data-icon="play_arrow" data-weight="fill">play_arrow</span>
+</button>
+<button aria-label="Next" class="text-on-surface-variant hover:text-white transition-colors" title="Next">
+<span class="material-symbols-outlined text-2xl" data-icon="skip_next">skip_next</span>
+</button>
+</div>
+<button aria-label="Volume" class="text-on-surface-variant hover:text-white transition-colors" title="Volume">
+<span class="material-symbols-outlined" data-icon="volume_up">volume_up</span>
+</button>
+</div>
+<div class="mt-8 pt-6 border-t border-white/10 flex items-center justify-between">
+<span class="font-code-mono text-[11px] text-phase-text-muted uppercase">AUDIO ENGINE: 24-BIT 48KHZ WAV</span>
+<a class="font-kicker text-kicker uppercase text-phase-accent hover:underline" href="#stream-links">OPEN IN SPOTIFY →</a>
+</div>
+</div>
+<!-- Right: Lyrics Karaoke Experience (7 cols) -->
+<div class="lg:col-span-7">
+<div class="flex items-center justify-between mb-6 pb-4 border-b border-white/10">
+<div>
+<span class="font-kicker text-kicker uppercase tracking-widest text-phase-accent font-extrabold">OFFICIAL LYRICS</span>
+<h3 class="font-headline-md text-headline-md text-white font-bold">SING ALONG WITH BLESSED</h3>
+</div>
+<div class="flex items-center gap-3">
+<button class="bg-phase-light-gray hover:bg-white hover:text-black text-white text-xs font-kicker uppercase tracking-wider px-3 py-2 transition-all flex items-center gap-1.5" onclick="navigator.clipboard?.writeText('Tell bad belle say I BLESSED, no be stress.\nGrace wey follow me na pure harvest.\nAny fire dem bring, I turn to gold—\nNa the story wey the angels already told.'); alert('Chorus lyrics copied!');">
+<span class="material-symbols-outlined text-sm" data-icon="content_copy">content_copy</span> COPY LYRICS
+                </button>
+<button class="bg-phase-accent text-black text-xs font-kicker uppercase tracking-wider font-extrabold px-3 py-2 transition-all flex items-center gap-1.5 mint-glow" onclick="alert('Instagram Story Card template rendered to clipboard!');">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span> IG STORY CARD
+                </button>
+</div>
+</div>
+<!-- Lyrics Display Container -->
+<div class="space-y-6 max-h-[500px] overflow-y-auto pr-4 custom-scrollbar">
+<!-- Verse 1 -->
+<div class="text-phase-text-muted space-y-1 font-body-lg text-body-lg">
+<p class="font-code-mono text-xs uppercase text-phase-accent tracking-widest mb-2">[VERSE 1]</p>
+<p class="">From the streets of Benin down to London town,</p>
+<p class="">Dem say boy cannot wear the golden crown.</p>
+<p class="">Late nights in the lab with the candlelight,</p>
+<p class="">Turned every struggle to morning light.</p>
+</div>
+<!-- Iconic Chorus Highlight -->
+<div class="p-6 bg-phase-black border-l-4 border-phase-accent shadow-xl my-6">
+<p class="font-code-mono text-xs uppercase text-phase-accent tracking-widest mb-3 font-bold">[CHORUS • HIGHLIGHT]</p>
+<div class="space-y-2 font-headline-sm text-headline-sm font-bold text-white italic tracking-wide">
+<p class="">Tell bad belle say I <span class="bg-phase-accent text-phase-black px-1.5 not-italic font-black">BLESSED</span>, no be stress.</p>
+<p class="">Grace wey follow me na pure harvest.</p>
+<p class="">Any fire dem bring, I turn to gold—</p>
+<p class="text-phase-accent">Na the story wey the angels already told.</p>
+</div>
+</div>
+<!-- Verse 2 -->
+<div class="text-phase-text-muted space-y-1 font-body-lg text-body-lg">
+<p class="font-code-mono text-xs uppercase text-phase-accent tracking-widest mb-2">[VERSE 2]</p>
+<p class="">Magic Pen writing words dat dey heal the soul,</p>
+<p class="">No weapon formed fit take away control.</p>
+<p class="">Mama pray for me when the clouds were grey,</p>
+<p class="">Now sunshine don clear the way.</p>
+</div>
+<!-- Outro -->
+<div class="text-phase-text-muted space-y-1 font-body-lg text-body-lg">
+<p class="font-code-mono text-xs uppercase text-phase-accent tracking-widest mb-2">[OUTRO]</p>
+<p class="">Blessed... Yeah, we blessed oh.</p>
+<p class="">Cosmos Music in the building.</p>
+<p class="">Moonlight Afriqa, no be stress.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 5. THE STORY & PRODUCER CREDITS ================= -->
+<section class="py-24 border-b border-white/5 relative">
+<div class="max-w-[1400px] mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Artist Quote & Genesis (7 cols) -->
+<div class="lg:col-span-7">
+<div class="font-kicker text-kicker uppercase tracking-widest text-phase-accent font-extrabold mb-3">ARTISTIC STATEMENT</div>
+<h2 class="font-headline-lg text-headline-lg text-white font-extrabold uppercase tracking-tight mb-8">
+              THE STORY BEHIND "BLESSED"
+            </h2>
+<blockquote class="border-l-2 border-phase-accent pl-6 py-2 mb-8">
+<p class="font-headline-md text-headline-md font-semibold text-white italic leading-relaxed mb-4">
+                "Blessed isn't just a song about joy—it's about surviving everything that was supposed to break you and realizing your spirit was invincible from the start."
+              </p>
+<cite class="font-code-mono text-code-mono text-phase-accent uppercase not-italic font-bold">— Moonlight Afriqa</cite>
+</blockquote>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              Written during a pivotal transition between West Africa and the UK, "Blessed" bridges organic Yoruba vocal cadence, soulful saxophone motifs, and hard-knocking contemporary Afrobeats percussion. It serves as the lead anthem for the upcoming worldwide studio project.
+            </p>
+</div>
+<!-- Official Technical Credits Card (5 cols) -->
+<div class="lg:col-span-5 bg-phase-dark border border-white/10 p-8 shadow-2xl">
+<h3 class="font-headline-sm text-headline-sm text-white font-bold uppercase tracking-wider pb-4 mb-6 border-b border-white/10 flex items-center justify-between">
+<span class="">TRACK CREDITS</span>
+<span class="font-code-mono text-xs text-phase-accent">ISRC: US-CMG-24-00918</span>
+</h3>
+<dl class="space-y-4 font-body-sm text-body-sm">
+<div class="flex justify-between border-b border-white/5 pb-2">
+<dt class="text-phase-text-muted">Lead Performer</dt>
+<dd class="text-white font-semibold">Moonlight Afriqa</dd>
+</div>
+<div class="flex justify-between border-b border-white/5 pb-2">
+<dt class="text-phase-text-muted">Songwriter</dt>
+<dd class="text-white font-semibold">Moonlight Afriqa (Imaekhai Richard Igebina)</dd>
+</div>
+<div class="flex justify-between border-b border-white/5 pb-2">
+<dt class="text-phase-text-muted">Production</dt>
+<dd class="text-white font-semibold">Phase Soundworks / Cosmos Music</dd>
+</div>
+<div class="flex justify-between border-b border-white/5 pb-2">
+<dt class="text-phase-text-muted">Mixing &amp; Dolby Atmos</dt>
+<dd class="text-white font-semibold">K-Vibe Studios London</dd>
+</div>
+<div class="flex justify-between border-b border-white/5 pb-2">
+<dt class="text-phase-text-muted">Mastering Engineer</dt>
+<dd class="text-white font-semibold">Sterling Sound NYC</dd>
+</div>
+<div class="flex justify-between pt-1">
+<dt class="text-phase-text-muted">Record Label</dt>
+<dd class="text-phase-accent font-semibold">Cosmos Music Group</dd>
+</div>
+</dl>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 6. LIVE TOUR & CELEBRATION SHOWS ================= -->
+<section class="py-24 bg-phase-dark border-b border-white/5 relative" id="tour-dates">
+<div class="max-w-[1400px] mx-auto px-6 md:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<div class="font-kicker text-kicker uppercase tracking-widest text-phase-accent font-extrabold mb-2">LIVE EXPERIENCE</div>
+<h2 class="font-headline-lg text-headline-lg text-white font-extrabold uppercase tracking-tight">BLESSED WORLDWIDE TOUR</h2>
+</div>
+<p class="font-body-md text-body-md text-phase-text-muted max-w-md">
+            Experience the electrifying sound and live band orchestration across primary global tour stops.
+          </p>
+</div>
+<!-- Tour Dates List -->
+<div class="divide-y divide-white/10 border-y border-white/10">
+<!-- London -->
+<div class="py-6 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/[0.02] px-4 transition-colors">
+<div class="flex items-center gap-6">
+<div class="font-code-mono text-phase-accent font-bold text-lg min-w-[90px]">NOV 14</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-white font-bold">LONDON, UK</h3>
+<p class="font-body-sm text-body-sm text-phase-text-muted">O2 Academy Islington</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-code-mono text-xs text-white/70 uppercase">Doors 19:00</span>
+<a class="bg-phase-accent text-phase-black hover:bg-white px-6 py-3 font-label-btn text-label-btn uppercase font-extrabold tracking-widest transition-all mint-glow" href="#">
+                TICKETS ON SALE
+              </a>
+</div>
+</div>
+<!-- Lagos -->
+<div class="py-6 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/[0.02] px-4 transition-colors">
+<div class="flex items-center gap-6">
+<div class="font-code-mono text-phase-accent font-bold text-lg min-w-[90px]">DEC 06</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-white font-bold">LAGOS, NIGERIA</h3>
+<p class="font-body-sm text-body-sm text-phase-text-muted">Landmark Beach Waterfront</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="bg-red-500/20 text-red-400 font-code-mono text-xs px-2.5 py-1 uppercase font-bold">Selling Fast</span>
+<a class="bg-phase-accent text-phase-black hover:bg-white px-6 py-3 font-label-btn text-label-btn uppercase font-extrabold tracking-widest transition-all mint-glow" href="#">
+                GET TICKETS
+              </a>
+</div>
+</div>
+<!-- New York -->
+<div class="py-6 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/[0.02] px-4 transition-colors">
+<div class="flex items-center gap-6">
+<div class="font-code-mono text-phase-accent font-bold text-lg min-w-[90px]">JAN 18</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-white font-bold">NEW YORK, USA</h3>
+<p class="font-body-sm text-body-sm text-phase-text-muted">Sony Hall Times Square</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-code-mono text-xs text-white/70 uppercase">Doors 20:00</span>
+<a class="bg-phase-accent text-phase-black hover:bg-white px-6 py-3 font-label-btn text-label-btn uppercase font-extrabold tracking-widest transition-all mint-glow" href="#">
+                TICKETS ON SALE
+              </a>
+</div>
+</div>
+<!-- Accra -->
+<div class="py-6 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-white/[0.02] px-4 transition-colors">
+<div class="flex items-center gap-6">
+<div class="font-code-mono text-phase-accent font-bold text-lg min-w-[90px]">FEB 02</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-white font-bold">ACCRA, GHANA</h3>
+<p class="font-body-sm text-body-sm text-phase-text-muted">Untamed Empire</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-code-mono text-xs text-white/70 uppercase">Festival Stage</span>
+<a class="bg-phase-accent text-phase-black hover:bg-white px-6 py-3 font-label-btn text-label-btn uppercase font-extrabold tracking-widest transition-all mint-glow" href="#">
+                TICKETS ON SALE
+              </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 7. OFFICIAL MERCH & COLLECTOR'S VINYL ================= -->
+<section class="py-24 border-b border-white/5 relative" id="merch-section">
+<div class="max-w-[1400px] mx-auto px-6 md:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<div class="font-kicker text-kicker uppercase tracking-widest text-phase-accent font-extrabold mb-2">PHYSICAL CAPSULE</div>
+<h2 class="font-headline-lg text-headline-lg text-white font-extrabold uppercase tracking-tight">BLESSED LIMITED DROP</h2>
+</div>
+<p class="font-body-md text-body-md text-phase-text-muted max-w-md">
+            Heavyweight textiles and physical collector pressings crafted exclusively for the release era.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Merch Item 1: Vinyl -->
+<div class="bg-phase-dark border border-white/10 p-6 flex flex-col justify-between group hover:border-phase-accent/50 transition-all">
+<div class="aspect-square bg-phase-black mb-6 relative overflow-hidden flex items-center justify-center p-4">
+<img alt="Blessed 7-inch Collector's Green Vinyl" class="w-4/5 h-4/5 object-contain group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB03RKYUQDI3qNqRmVUQoUVlKMYTLWWWm72HVWo2CqBplaI-QsnQGl8jnRgh1Wb6y2IvUIS98EqgkV2nOAvxfgc-7gvZnyJ0iUuxl2d6QVGaeFZZBf2tcqaEgOZtgUvMWorPJjzQA67uRtFYrD1eAeBaLFhjTnqur4Tkl2rouR6IbbuG2aZMYClYCoX4RDx4i2_KQzXU12Jbh6h_bNP5K8petRXfFrnxXi6E535Dk0BR4v87VlyXZGguw">
+<div class="absolute top-3 left-3 bg-phase-accent text-phase-black font-code-mono text-[10px] px-2 py-0.5 font-bold uppercase">
+                LIMITED 500 COPIES
+              </div>
+</div>
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-white font-bold">"Blessed" 7-inch Vinyl</h3>
+<span class="font-code-mono text-lg text-phase-accent font-bold">£35.00</span>
+</div>
+<p class="font-body-sm text-body-sm text-phase-text-muted mb-6">
+                Special edition 45 RPM green pressing in matte sleeve with metallic foiling and hand-numbered insert.
+              </p>
+<button class="w-full bg-phase-accent text-phase-black hover:bg-white py-3.5 font-label-btn text-label-btn uppercase font-extrabold tracking-widest transition-all" onclick="alert('Added Blessed 7-inch Vinyl to cart');">
+                ORDER NOW
+              </button>
+</div>
+</div>
+<!-- Merch Item 2: Tour Hoodie -->
+<div class="bg-phase-dark border border-white/10 p-6 flex flex-col justify-between group hover:border-phase-accent/50 transition-all">
+<div class="aspect-square bg-phase-black mb-6 relative overflow-hidden flex items-center justify-center p-4">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="A premium heavyweight obsidian black streetwear hoodie with neon mint green graphic typographic print of BLESSED on the chest. Studio product photography on dark industrial background with soft directional rim lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBt57feU9RsRjCCs2T041U2RPg7Qorq3sNWdcYI1Z7g0IlJWIu4PHQ_syQMC2h0cnHnBsk_8PnVulwDzw0uUOtjDxv75QDd0_dEK1wL2t7cVAz79Tig6nMHSUxiZulNDi8_Hq013bPgBxU8YDoM3qWv4vydcq4qpIXh2gLFwfRu2Z6j144gKiPqsGzkxybEtt0L8hDE8zTZgAkj2orC-XhHIwM1fIRHuGBmHPCL-pj6')"></div>
+<div class="absolute top-3 left-3 bg-white/10 backdrop-blur-md text-white font-code-mono text-[10px] px-2 py-0.5 font-bold uppercase">
+                500 GSM COTTON
+              </div>
+</div>
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-white font-bold">Blessed Heavyweight Hoodie</h3>
+<span class="font-code-mono text-lg text-phase-accent font-bold">£65.00</span>
+</div>
+<p class="font-body-sm text-body-sm text-phase-text-muted mb-6">
+                Custom cut-and-sew heavyweight fleece with neon puff print typography on chest and back tour dates.
+              </p>
+<button class="w-full bg-transparent border border-white/30 text-white hover:border-phase-accent hover:text-phase-accent py-3.5 font-label-btn text-label-btn uppercase font-extrabold tracking-widest transition-all" onclick="alert('Added Blessed Heavyweight Hoodie to cart');">
+                ADD TO CART
+              </button>
+</div>
+</div>
+<!-- Merch Item 3: Magic Pen Tee -->
+<div class="bg-phase-dark border border-white/10 p-6 flex flex-col justify-between group hover:border-phase-accent/50 transition-all">
+<div class="aspect-square bg-phase-black mb-6 relative overflow-hidden flex items-center justify-center p-4">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="A vintage bio-washed charcoal oversized graphic t-shirt featuring the artistic portrait of Moonlight Afriqa and typographic styling in high fashion editorial street presentation. Flat lay photography with soft neon green lighting accents." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBqhrhmaCHTHfgGP4-Jx8u896fuwfQMLOtCXle8kp9iMjSMYnKXp0fzH01H0-iuY8ITC3jv6tJfOQYEzBu-2Tt7pVotqJN4IUcwp8VEaqbd9nXxex7jBKHe7gFZ5cTm6RVYnfSb8saayNeaLKZSpr_skhBJAyKJa3kq36KjC6vAU5U84Rvpj18-JtRbEY4piHAnVVF5ncpTLAmUEVv1SnCsnCbFWoJQWKJxt2bIQK2x')"></div>
+<div class="absolute top-3 left-3 bg-white/10 backdrop-blur-md text-white font-code-mono text-[10px] px-2 py-0.5 font-bold uppercase">
+                VINTAGE WASH
+              </div>
+</div>
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-white font-bold">"Blessed" Vintage Tour Tee</h3>
+<span class="font-code-mono text-lg text-phase-accent font-bold">£30.00</span>
+</div>
+<p class="font-body-sm text-body-sm text-phase-text-muted mb-6">
+                Bio-washed 280 GSM cotton jersey with distressed screen print artwork and raw hems.
+              </p>
+<button class="w-full bg-transparent border border-white/30 text-white hover:border-phase-accent hover:text-phase-accent py-3.5 font-label-btn text-label-btn uppercase font-extrabold tracking-widest transition-all" onclick="alert('Added Magic Pen Vintage Tee to cart');">
+                ADD TO CART
+              </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 8. VIP NEWSLETTER JOIN ================= -->
+<section class="py-20 bg-phase-black relative overflow-hidden">
+<div class="max-w-[1400px] mx-auto px-6 md:px-12 text-center max-w-3xl">
+<span class="font-kicker text-kicker uppercase tracking-widest text-phase-accent font-extrabold mb-2 block">DIRECT FAN DISPATCH</span>
+<h2 class="font-headline-lg text-headline-lg text-white font-extrabold uppercase tracking-tight mb-4">JOIN THE INNER CIRCLE</h2>
+<p class="font-body-md text-body-md text-phase-text-muted mb-8">
+          Receive private tour presale codes, unreleased voice notes, and early merch drop allocations.
+        </p>
+<form class="flex flex-col sm:flex-row gap-0 max-w-lg mx-auto" onsubmit="event.preventDefault(); alert('Welcome to the Magic Pen Inner Circle.');">
+<input class="w-full bg-phase-dark border border-white/20 px-5 py-4 text-white placeholder-phase-text-muted text-sm font-code-mono focus:border-phase-accent focus:ring-0 focus:outline-none" placeholder="ENTER YOUR EMAIL ADDRESS" required="" type="email">
+<button class="bg-phase-accent text-phase-black hover:bg-white font-label-btn text-label-btn uppercase px-8 py-4 font-extrabold tracking-widest transition-all mint-glow shrink-0" type="submit">
+            SUBSCRIBE
+          </button>
+</form>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER (ANCHOR COMPONENT) ================= -->
+<footer class="docked full-width bottom bg-phase-black dark:bg-phase-black border-t border-outline-variant/20">
+<div class="w-full py-12 px-6 md:px-12 max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<!-- Brand & Global Copyright Text -->
+<div class="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
+<span class="font-brand-edgy font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface dark:text-on-surface uppercase">
+          MOONLIGHT AFRIQA
+        </span>
+<span class="hidden md:inline text-phase-text-muted">|</span>
+<p class="font-body-sm text-body-sm text-phase-text-muted dark:text-phase-text-muted">
+          © 2024 Moonlight Afriqa. Distributed globally via Cosmos Music Group / Phase Soundworks. All Rights Reserved.
+        </p>
+</div>
+<!-- Links Cluster -->
+<nav class="flex flex-wrap justify-center items-center gap-6 font-kicker text-kicker uppercase">
+<a class="text-phase-text-muted dark:text-phase-text-muted hover:text-phase-accent dark:hover:text-phase-accent transition-colors duration-150" href="#">
+          Privacy Policy
+        </a>
+<a class="text-phase-text-muted dark:text-phase-text-muted hover:text-phase-accent dark:hover:text-phase-accent transition-colors duration-150" href="#">
+          Terms of Service
+        </a>
+<a class="text-phase-text-muted dark:text-phase-text-muted hover:text-phase-accent dark:hover:text-phase-accent transition-colors duration-150" href="#">
+          Press Kit &amp; EPK
+        </a>
+<a class="text-phase-text-muted dark:text-phase-text-muted hover:text-phase-accent dark:hover:text-phase-accent transition-colors duration-150" href="#">
+          Management Inquiries
+        </a>
+<a class="text-phase-text-muted dark:text-phase-text-muted hover:text-phase-accent dark:hover:text-phase-accent transition-colors duration-150 font-code-mono text-code-mono" href="#">
+          Universal Smart-Link API
+        </a>
+</nav>
+</div>
+</footer>
+<!-- Light Vanilla JS for Vinyl Rotation & Audio Play Toggles -->
+<script>
+    const heroVinyl = document.getElementById('hero-vinyl');
+    const vinylBtn = document.getElementById('vinyl-spin-btn');
+    const playBtn = document.getElementById('main-play-btn');
+    const headerAudioToggle = document.getElementById('header-audio-toggle');
+    
+    let isSpinning = true;
+
+    function toggleVinyl() {
+      isSpinning = !isSpinning;
+      if (isSpinning) {
+        heroVinyl.classList.remove('animate-vinyl-paused');
+        vinylBtn.innerHTML = '<span class="material-symbols-outlined text-sm">album</span><span>PAUSE ROTATION</span>';
+        if (playBtn) playBtn.innerHTML = '<span class="material-symbols-outlined text-3xl translate-x-0.5">pause</span>';
+      } else {
+        heroVinyl.classList.add('animate-vinyl-paused');
+        vinylBtn.innerHTML = '<span class="material-symbols-outlined text-sm">play_circle</span><span>SPIN RECORD</span>';
+        if (playBtn) playBtn.innerHTML = '<span class="material-symbols-outlined text-3xl translate-x-0.5">play_arrow</span>';
+      }
+    }
+
+    if (vinylBtn) vinylBtn.addEventListener('click', toggleVinyl);
+    if (playBtn) playBtn.addEventListener('click', toggleVinyl);
+    if (headerAudioToggle) headerAudioToggle.addEventListener('click', toggleVinyl);
+  </script>
+
+
+</body></html>

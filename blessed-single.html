@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Moonlight Afriqa — BLESSED | Official Single Pre-Save Portal</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Poppins:wght@400;600;700;800;900&amp;family=Raleway:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&amp;family=Syne:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms and Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-surface": "#e5e2e1",
+            "amazon-music": "#00a8e1",
+            "inverse-on-surface": "#313030",
+            "error-container": "#93000a",
+            "outline-variant": "#3b4a3f",
+            "audiomack": "#ffa200",
+            "on-primary-fixed": "#002110",
+            "tertiary": "#fcf8f8",
+            "phase-accent": "#2bfb9c",
+            "outline": "#849587",
+            "background": "#131313",
+            "on-tertiary-container": "#616060",
+            "surface-container-high": "#2a2a2a",
+            "tertiary-fixed-dim": "#c8c6c5",
+            "surface-container-highest": "#353534",
+            "on-primary-container": "#006f41",
+            "surface-container-low": "#1c1b1b",
+            "surface-tint": "#00e38a",
+            "phase-dark": "#121212",
+            "apple-music": "#fa243c",
+            "tertiary-fixed": "#e5e2e1",
+            "primary-fixed": "#57ffa7",
+            "phase-gray": "#181818",
+            "phase-light-gray": "#242424",
+            "secondary-fixed": "#57ffa6",
+            "secondary-fixed-dim": "#28e28c",
+            "inverse-surface": "#e5e2e1",
+            "on-secondary": "#00391e",
+            "primary": "#e8ffeb",
+            "on-background": "#e5e2e1",
+            "on-primary": "#00391e",
+            "on-secondary-fixed-variant": "#00522e",
+            "surface": "#131313",
+            "on-tertiary-fixed": "#1c1b1b",
+            "secondary": "#45f39b",
+            "primary-fixed-dim": "#00e38a",
+            "on-primary-fixed-variant": "#00522e",
+            "inverse-primary": "#006d3f",
+            "tertiary-container": "#dfdcdb",
+            "on-surface-variant": "#bacbbc",
+            "on-error": "#690005",
+            "on-tertiary": "#313030",
+            "surface-container": "#201f1f",
+            "tidal": "#00ffff",
+            "secondary-container": "#04d681",
+            "phase-text-muted": "#888888",
+            "boomplay": "#00a3ff",
+            "phase-accent-hover": "#22df89",
+            "deezer": "#a238ff",
+            "surface-dim": "#131313",
+            "on-secondary-fixed": "#00210f",
+            "surface-bright": "#3a3939",
+            "spotify": "#1db954",
+            "on-error-container": "#ffdad6",
+            "error": "#ffb4ab",
+            "surface-variant": "#353534",
+            "youtube": "#ff0000",
+            "on-secondary-container": "#005731",
+            "on-tertiary-fixed-variant": "#474746",
+            "phase-black": "#0c0c0c",
+            "primary-container": "#2bfb9c",
+            "surface-container-lowest": "#0e0e0e"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "3rem",
+            "space-lg": "1.75rem",
+            "space-section": "7rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "3rem",
+            "space-sm": "0.5rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-2xl": "5rem",
+            "margin-mobile": "1.5rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "counter-display": ["Poppins"],
+            "headline-hero-mobile": ["Syne"],
+            "body-sm": ["Raleway"],
+            "code-mono": ["JetBrains Mono"],
+            "headline-lg": ["Syne"],
+            "kicker": ["Poppins"],
+            "body-lg": ["Raleway"],
+            "headline-md": ["Poppins"],
+            "headline-hero": ["Syne"],
+            "body-md": ["Raleway"],
+            "label-btn": ["Poppins"],
+            "headline-sm": ["Poppins"],
+            "headline-lg-mobile": ["Syne"]
+          },
+          "fontSize": {
+            "counter-display": ["36px", { "lineHeight": "1.0", "letterSpacing": "-0.02em", "fontWeight": "900" }],
+            "headline-hero-mobile": ["40px", { "lineHeight": "0.95", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "body-sm": ["13px", { "lineHeight": "1.5", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "code-mono": ["12px", { "lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500" }],
+            "headline-lg": ["48px", { "lineHeight": "1.0", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "kicker": ["11px", { "lineHeight": "1.2", "letterSpacing": "0.2em", "fontWeight": "800" }],
+            "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.0em", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "1.2", "letterSpacing": "0.0em", "fontWeight": "700" }],
+            "headline-hero": ["72px", { "lineHeight": "0.9", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "body-md": ["15px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "label-btn": ["11px", { "lineHeight": "1.0", "letterSpacing": "0.18em", "fontWeight": "800" }],
+            "headline-sm": ["18px", { "lineHeight": "1.3", "letterSpacing": "0.02em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["32px", { "lineHeight": "1.05", "letterSpacing": "-0.01em", "fontWeight": "800" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    @keyframes spin-vinyl {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .animate-spin-slow {
+      animation: spin-vinyl 7s linear infinite;
+    }
+    .animate-spin-paused {
+      animation-play-state: paused;
+    }
+    .btn-phase-primary {
+      background-color: #2bfb9c;
+      color: #000000;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0 4px 20px rgba(43, 251, 156, 0.28);
+    }
+    .btn-phase-primary:hover {
+      background-color: #ffffff;
+      color: #000000;
+      box-shadow: 0 8px 30px rgba(255, 255, 255, 0.35);
+      transform: translateY(-1px);
+    }
+    .btn-phase-secondary {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      color: #ffffff;
+      transition: all 0.2s ease-in-out;
+    }
+    .btn-phase-secondary:hover {
+      border-color: #2bfb9c;
+      color: #2bfb9c;
+      background: rgba(43, 251, 156, 0.05);
+    }
+    .paint-blend {
+      mix-blend-mode: screen;
+      filter: drop-shadow(0 0 35px rgba(43, 251, 156, 0.45));
+    }
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=New+Rocker&display=swap" rel="stylesheet">
+
+<style>
+  .font-brand-edgy, .hero-artist-font {
+    font-family: 'New Rocker', 'Bebas Neue', cursive, sans-serif !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+  }
+</style>
+
+</head>
+<body class="bg-phase-black text-on-surface antialiased selection:bg-phase-accent selection:text-phase-black overflow-x-hidden">
+<!-- ================= TOP APP BAR (SHARED COMPONENT) ================= -->
+<header class="bg-phase-black/90 dark:bg-phase-black/90 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-6 md:px-12 py-4 max-w-[1400px] mx-auto">
+<!-- Brand Logo -->
+<a class="flex items-center gap-2 group" href="index.html" title="Back to Moonlight Afriqa Homepage">
+<span class="font-brand-edgy font-headline-md text-headline-md tracking-tighter text-on-surface dark:text-on-surface font-black uppercase group-hover:text-phase-accent transition-colors">
+          MOONLIGHT AFRIQA
+        </span>
+<span class="inline-block w-2 h-2 rounded-full bg-phase-accent animate-pulse"></span>
+</a>
+<!-- Navigation Links (Exact Shared Blueprint) -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-phase-accent dark:text-phase-accent border-b-2 border-phase-accent pb-1 font-bold font-kicker text-kicker uppercase tracking-widest hover:text-phase-accent dark:hover:text-phase-accent transition-all duration-150" href="#pre-save">Pre-Save</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors font-kicker text-kicker uppercase tracking-widest hover:text-phase-accent dark:hover:text-phase-accent transition-all duration-150" href="#teaser">Teaser</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors font-kicker text-kicker uppercase tracking-widest hover:text-phase-accent dark:hover:text-phase-accent transition-all duration-150" href="#story">Story</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors font-kicker text-kicker uppercase tracking-widest hover:text-phase-accent dark:hover:text-phase-accent transition-all duration-150" href="#lyrics">Lyrics</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors font-kicker text-kicker uppercase tracking-widest hover:text-phase-accent dark:hover:text-phase-accent transition-all duration-150" href="#merch">Merch</a>
+</nav>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:text-phase-accent transition-colors p-2 flex items-center justify-center" id="audio-dock-toggle" title="Sound preview monitor">
+<span class="material-symbols-outlined text-[22px]">graphic_eq</span>
+</button>
+<button class="text-on-surface-variant hover:text-phase-accent transition-colors p-2 flex items-center justify-center" id="share-hub-btn" title="Share Portal">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+<a class="btn-phase-primary px-5 py-2.5 font-label-btn text-label-btn tracking-wider uppercase font-extrabold active:scale-95 transition-transform duration-100 flex items-center gap-1.5" href="#pre-save">
+          PRE-SAVE NOW
+        </a>
+</div>
+</div>
+</header>
+<main class="w-full relative">
+<!-- ================= HERO CHAPTER ================= -->
+<section class="relative min-h-[92vh] flex items-center overflow-hidden border-b border-outline-variant/20 pt-8 pb-16 md:py-24" id="hero">
+<!-- Atmospheric Backdrop Overlays -->
+<div class="absolute inset-0 pointer-events-none opacity-20 bg-[radial-gradient(#2bfb9c_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<!-- Mint Paint Brush Background Token -->
+<div class="absolute -top-12 md:top-10 left-1/2 -translate-x-1/2 w-full max-w-[1280px] pointer-events-none opacity-30 select-none paint-blend z-0">
+<img alt="Brush accent backdrop" class="w-full object-contain filter hue-rotate-15 brightness-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdul3i51LYtFNhOcwiZPl8fAN6yqkMFFndcMuRp0KVWoW8_T7IM3-1QBPArmTyEGA6D9at7v0ZAjmxuFmEQGAsyx4msyV8nqqnu3M39LbVKRbS4Hh2L813Oo-5X8ZrWY4_GTJD-m6bP-BaE8z-KHCHoUqyVZdevkQapqvLnH2-gX-XFdrP57jJeTYDWgwTtVhw-zJImY-UxG4qhwoVebOgDbSuglRtxsUm1dr5P6dMKHzASJqkY6JziQ"/>
+</div>
+<div class="max-w-[1400px] mx-auto px-6 md:px-12 w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Left Column: Copy & Conversions -->
+<div class="lg:col-span-6 flex flex-col justify-center space-y-6">
+<div class="flex flex-wrap items-center gap-3">
+<span class="px-3 py-1 bg-phase-accent/15 border border-phase-accent/40 text-phase-accent font-kicker text-kicker uppercase tracking-widest">
+              NEW SINGLE PRE-SAVE
+            </span>
+<span class="px-3 py-1 bg-phase-gray border border-outline-variant/30 text-phase-text-muted font-code-mono text-code-mono uppercase">
+              AFRO-FUSION / SOUL • 2024
+            </span>
+</div>
+<!-- Main Title -->
+<div class="space-y-1">
+<h1 class="font-headline-hero text-headline-hero-mobile md:text-headline-hero text-on-surface font-extrabold tracking-tighter uppercase leading-none drop-shadow-[0_10px_35px_rgba(0,0,0,0.95)]">
+              BLESSED
+            </h1>
+<p class="font-brand-edgy font-headline-md text-headline-md text-phase-accent font-bold tracking-tight uppercase flex items-center gap-2">
+              MOONLIGHT AFRIQA
+              <span class="text-on-surface-variant font-normal text-sm tracking-normal normal-case">(The Magic Pen)</span>
+</p>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            From the viral powerhouse behind <em>SASEZOLA (7.1M+ streams)</em> comes Moonlight Afriqa's most spiritually transcendent offering yet. Lock in the official world release across all streaming networks.
+          </p>
+<!-- Social Proof Badge -->
+<div class="inline-flex items-center gap-3.5 p-3.5 bg-phase-dark border border-outline-variant/40 w-fit">
+<div class="flex -space-x-2 overflow-hidden">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-phase-accent text-phase-black font-bold text-xs ring-2 ring-phase-dark">MA</span>
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-apple-music text-white font-bold text-xs ring-2 ring-phase-dark">♪</span>
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-spotify text-black font-bold text-xs ring-2 ring-phase-dark">🟢</span>
+</div>
+<div class="text-left">
+<div class="font-kicker text-kicker text-phase-accent uppercase tracking-widest font-bold">LIVE MOMENTUM</div>
+<div class="font-code-mono text-code-mono text-on-surface">Over <span class="text-white font-bold">48,250 fans</span> already pre-saved</div>
+</div>
+</div>
+<!-- Real-Time Countdown Module -->
+<div class="pt-2">
+<div class="font-kicker text-kicker text-on-surface-variant uppercase tracking-widest mb-3 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-phase-accent animate-ping"></span>
+              RELEASES WORLDWIDE IN:
+            </div>
+<div class="grid grid-cols-4 gap-2 md:gap-3 max-w-md">
+<div class="bg-phase-dark border border-outline-variant/30 p-3 md:p-4 text-center">
+<span class="font-counter-display text-counter-display text-on-surface block text-2xl md:text-3xl font-black" id="timer-days">14</span>
+<span class="font-kicker text-kicker text-phase-text-muted uppercase tracking-widest text-[9px] md:text-[10px]">DAYS</span>
+</div>
+<div class="bg-phase-dark border border-outline-variant/30 p-3 md:p-4 text-center">
+<span class="font-counter-display text-counter-display text-on-surface block text-2xl md:text-3xl font-black" id="timer-hours">08</span>
+<span class="font-kicker text-kicker text-phase-text-muted uppercase tracking-widest text-[9px] md:text-[10px]">HOURS</span>
+</div>
+<div class="bg-phase-dark border border-outline-variant/30 p-3 md:p-4 text-center">
+<span class="font-counter-display text-counter-display text-on-surface block text-2xl md:text-3xl font-black" id="timer-minutes">32</span>
+<span class="font-kicker text-kicker text-phase-text-muted uppercase tracking-widest text-[9px] md:text-[10px]">MINS</span>
+</div>
+<div class="bg-phase-dark border border-outline-variant/30 p-3 md:p-4 text-center border-l-2 border-l-phase-accent">
+<span class="font-counter-display text-counter-display text-phase-accent block text-2xl md:text-3xl font-black" id="timer-seconds">15</span>
+<span class="font-kicker text-kicker text-phase-accent uppercase tracking-widest text-[9px] md:text-[10px]">SECS</span>
+</div>
+</div>
+</div>
+<!-- Dual Hero Action Buttons -->
+<div class="flex flex-wrap gap-4 pt-2">
+<a class="btn-phase-primary px-8 py-4 font-label-btn text-label-btn tracking-wider uppercase font-black text-center" href="#pre-save">
+              PRE-SAVE TO LIBRARY
+            </a>
+<a class="btn-phase-secondary px-8 py-4 font-label-btn text-label-btn tracking-wider uppercase font-bold text-center flex items-center justify-center gap-2" href="#teaser">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+              LISTEN TO TEASER
+            </a>
+</div>
+</div>
+<!-- Right Column: Visual Tactile Sleeve + Vinyl Record Presentation -->
+<div class="lg:col-span-6 flex justify-center items-center py-6">
+<div class="relative w-[300px] sm:w-[380px] md:w-[440px] aspect-square group select-none">
+<!-- Vinyl Disc Slipping Out (Exact Image Asset) -->
+<div class="absolute -right-8 sm:-right-16 md:-right-24 top-0 w-full h-full rounded-full z-10 transition-transform duration-700 ease-out group-hover:translate-x-12 animate-spin-slow" id="hero-vinyl">
+<img alt="Blessed Vinyl Record" class="w-full h-full object-contain filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.9)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeqyCcldPVCiZL4vV4A4Oakci_mpaqakBnUNt1wQIemzIZ1lhoIIZtdaGL7Wlko5LVlxzrVSVtX3iUb5aQagK2oR5YPZ9D7sjeapwEKdMzXTz0gkF20kQlA4ozswVyURtxCR0nlvgKsfVa8jYu7Es-gccpOBLsnw28hxmtCR_1KgYZvk6Cgjnlq132RoBlX_Tt3aHSKP7ay059hBLBV2ydduDvZKKNLTIgtDPLRK4oNsLRD76H4tjItA"/>
+</div>
+<!-- Album Sleeve Cover (Exact Image Asset) -->
+<div class="relative z-20 w-full h-full border border-white/10 bg-phase-dark shadow-[0_25px_50px_rgba(0,0,0,0.95)] overflow-hidden">
+<img alt="Moonlight Afriqa - Blessed Official Artwork" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkaU93gdkTnYLw9nEXoKeEre4LFR4h1eRLwpKr0Ux-BbM78JSaF_gYMe5qhoh5JNnTDkI9Rgn05Om17LyzCnvYoCQ10UVn4Rz614gFzmctljYRM5PjzdmS-fGOfuHZFawwz8TuOWw2S_yivIqDHjMC0aIlVqsW-iLYchoZJXvUql7xFTCeCki0oX0Tt2-gLSr9KT3wpxajvl8hbnzP16WnQDiz329MRu3O8xPBJoH_pOLtlIs7UfS0fg"/>
+<!-- Analog Edge Foil & Sheen -->
+<div class="absolute inset-0 bg-gradient-to-tr from-black/60 via-transparent to-white/10 pointer-events-none"></div>
+<!-- Sleeve Badge -->
+<div class="absolute bottom-3 left-3 bg-phase-black/90 border border-phase-accent/40 backdrop-blur-md px-3 py-1 flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-phase-accent"></span>
+<span class="font-code-mono text-code-mono text-[10px] text-phase-accent uppercase tracking-widest">VINYL EDITION #001</span>
+</div>
+</div>
+<!-- Ambient Glow Base -->
+<div class="absolute -bottom-6 -left-6 w-3/4 h-3/4 bg-phase-accent/15 blur-3xl pointer-events-none rounded-full"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SMART LINKS CONVERSION HUB ================= -->
+<section class="py-20 md:py-space-section bg-phase-dark border-b border-outline-variant/20 relative" id="pre-save">
+<div class="max-w-[1400px] mx-auto px-6 md:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<div class="font-kicker text-kicker text-phase-accent uppercase tracking-widest font-extrabold mb-2">SMART DIRECT PRE-SAVE ENGINE</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-black tracking-tight uppercase text-on-surface">
+              CHOOSE YOUR PLATFORM
+            </h2>
+</div>
+<p class="font-body-md text-body-md text-phase-text-muted max-w-md">
+            Clicking Pre-Save automatically syncs the release to your library the exact second it goes live in your country.
+          </p>
+</div>
+<!-- 8-Platform Pre-save Bento Rows -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+<!-- 1. Spotify -->
+<div class="bg-phase-gray border border-white/10 p-5 flex items-center justify-between hover:bg-white/[0.03] hover:border-phase-accent/50 transition-all duration-200 group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-spotify/15 border border-spotify/30 flex items-center justify-center text-spotify font-black text-xl">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">music_note</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">Spotify</div>
+<div class="font-code-mono text-code-mono text-phase-text-muted">Pre-Save &amp; Follow Artist</div>
+</div>
+</div>
+<button class="btn-phase-primary px-5 py-2.5 font-label-btn text-label-btn tracking-wider uppercase font-extrabold" onclick="triggerPreSave('Spotify')">
+              PRE-SAVE
+            </button>
+</div>
+<!-- 2. Apple Music -->
+<div class="bg-phase-gray border border-white/10 p-5 flex items-center justify-between hover:bg-white/[0.03] hover:border-phase-accent/50 transition-all duration-200 group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-apple-music/15 border border-apple-music/30 flex items-center justify-center text-apple-music font-black text-xl">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">graphic_eq</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">Apple Music</div>
+<div class="font-code-mono text-code-mono text-phase-text-muted">Pre-Add to Library</div>
+</div>
+</div>
+<button class="btn-phase-secondary px-5 py-2.5 font-label-btn text-label-btn tracking-wider uppercase font-bold" onclick="triggerPreSave('Apple Music')">
+              PRE-ADD
+            </button>
+</div>
+<!-- 3. YouTube Music -->
+<div class="bg-phase-gray border border-white/10 p-5 flex items-center justify-between hover:bg-white/[0.03] hover:border-phase-accent/50 transition-all duration-200 group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-youtube/15 border border-youtube/30 flex items-center justify-center text-youtube font-black text-xl">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">smart_display</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">YouTube Music</div>
+<div class="font-code-mono text-code-mono text-phase-text-muted">Subscribe &amp; Set Reminder</div>
+</div>
+</div>
+<button class="btn-phase-secondary px-5 py-2.5 font-label-btn text-label-btn tracking-wider uppercase font-bold" onclick="triggerPreSave('YouTube Music')">
+              REMIND ME
+            </button>
+</div>
+<!-- 4. Audiomack -->
+<div class="bg-phase-gray border border-white/10 p-5 flex items-center justify-between hover:bg-white/[0.03] hover:border-phase-accent/50 transition-all duration-200 group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-audiomack/15 border border-audiomack/30 flex items-center justify-center text-audiomack font-black text-xl">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">offline_bolt</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">Audiomack</div>
+<div class="font-code-mono text-code-mono text-phase-text-muted">Favorite &amp; Pre-Download</div>
+</div>
+</div>
+<button class="btn-phase-secondary px-5 py-2.5 font-label-btn text-label-btn tracking-wider uppercase font-bold" onclick="triggerPreSave('Audiomack')">
+              PRE-SAVE
+            </button>
+</div>
+<!-- 5. Boomplay -->
+<div class="bg-phase-gray border border-white/10 p-5 flex items-center justify-between hover:bg-white/[0.03] hover:border-phase-accent/50 transition-all duration-200 group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-boomplay/15 border border-boomplay/30 flex items-center justify-center text-boomplay font-black text-xl">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">headphones</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">Boomplay</div>
+<div class="font-code-mono text-code-mono text-phase-text-muted">Pre-Save in Africa</div>
+</div>
+</div>
+<button class="btn-phase-secondary px-5 py-2.5 font-label-btn text-label-btn tracking-wider uppercase font-bold" onclick="triggerPreSave('Boomplay')">
+              PRE-SAVE
+            </button>
+</div>
+<!-- 6. Amazon Music -->
+<div class="bg-phase-gray border border-white/10 p-5 flex items-center justify-between hover:bg-white/[0.03] hover:border-phase-accent/50 transition-all duration-200 group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-amazon-music/15 border border-amazon-music/30 flex items-center justify-center text-amazon-music font-black text-xl">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">cloud_done</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">Amazon Music</div>
+<div class="font-code-mono text-code-mono text-phase-text-muted">Pre-Order Single (Free)</div>
+</div>
+</div>
+<button class="btn-phase-secondary px-5 py-2.5 font-label-btn text-label-btn tracking-wider uppercase font-bold" onclick="triggerPreSave('Amazon Music')">
+              PRE-ORDER
+            </button>
+</div>
+<!-- 7. TIDAL -->
+<div class="bg-phase-gray border border-white/10 p-5 flex items-center justify-between hover:bg-white/[0.03] hover:border-phase-accent/50 transition-all duration-200 group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-tidal/15 border border-tidal/30 flex items-center justify-center text-tidal font-black text-xl">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">high_quality</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">Tidal</div>
+<div class="font-code-mono text-code-mono text-phase-text-muted">Hi-Res Lossless Pre-Add</div>
+</div>
+</div>
+<button class="btn-phase-secondary px-5 py-2.5 font-label-btn text-label-btn tracking-wider uppercase font-bold" onclick="triggerPreSave('Tidal')">
+              PRE-ADD
+            </button>
+</div>
+<!-- 8. Deezer -->
+<div class="bg-phase-gray border border-white/10 p-5 flex items-center justify-between hover:bg-white/[0.03] hover:border-phase-accent/50 transition-all duration-200 group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-deezer/15 border border-deezer/30 flex items-center justify-center text-deezer font-black text-xl">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">equalizer</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">Deezer</div>
+<div class="font-code-mono text-code-mono text-phase-text-muted">Pre-Save to Favorites</div>
+</div>
+</div>
+<button class="btn-phase-secondary px-5 py-2.5 font-label-btn text-label-btn tracking-wider uppercase font-bold" onclick="triggerPreSave('Deezer')">
+              PRE-SAVE
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= INTERACTIVE AUDIO TEASER PLAYER ================= -->
+<section class="py-20 md:py-space-section bg-phase-black border-b border-outline-variant/20 relative" id="teaser">
+<div class="max-w-[1400px] mx-auto px-6 md:px-12">
+<div class="bg-phase-gray border border-white/10 p-8 md:p-12 relative overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Left Info -->
+<div class="lg:col-span-4 space-y-3">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 bg-phase-accent/10 border border-phase-accent/30 text-phase-accent font-code-mono text-code-mono">
+<span class="material-symbols-outlined text-[14px]">graphic_eq</span>
+                0:30 EXCLUSIVE CLIP
+              </div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-extrabold uppercase">
+                Blessed (Official Audio Teaser)
+              </h3>
+<p class="font-body-sm text-body-sm text-phase-text-muted">
+                Produced by Phase Soundworks. Mastered for Dolby Atmos &amp; spatial audio systems.
+              </p>
+</div>
+<!-- Middle Audio Console -->
+<div class="lg:col-span-5 space-y-4">
+<!-- Player Bar Control -->
+<div class="flex items-center gap-4">
+<button class="w-14 h-14 bg-phase-accent hover:bg-white text-phase-black flex items-center justify-center transition-all flex-shrink-0 shadow-[0_0_20px_rgba(43,251,156,0.3)]" id="teaser-play-btn">
+<span class="material-symbols-outlined text-[32px]" id="teaser-play-icon" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<div class="flex-1 space-y-2">
+<div class="flex justify-between font-code-mono text-code-mono text-[11px] text-phase-text-muted">
+<span id="player-time-current">0:00</span>
+<span class="text-phase-accent font-bold">PREVIEW CLIP</span>
+<span>0:30</span>
+</div>
+<!-- Interactive Progress Scrubber -->
+<div class="w-full h-2 bg-phase-light-gray cursor-pointer relative" id="scrubber-track">
+<div class="h-full bg-phase-accent w-0 relative transition-all duration-75" id="scrubber-fill">
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-white shadow-[0_0_10px_#2bfb9c]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Animated Waveform Visualizer simulation -->
+<div class="flex items-end gap-1 h-10 pt-2 px-2 border-b border-white/5" id="waveform-bars">
+<div class="w-1 bg-phase-accent h-3"></div>
+<div class="w-1 bg-phase-accent h-7"></div>
+<div class="w-1 bg-phase-accent h-5"></div>
+<div class="w-1 bg-phase-accent h-9"></div>
+<div class="w-1 bg-phase-accent h-4"></div>
+<div class="w-1 bg-phase-accent h-8"></div>
+<div class="w-1 bg-phase-accent h-10"></div>
+<div class="w-1 bg-phase-accent h-6"></div>
+<div class="w-1 bg-phase-accent h-3"></div>
+<div class="w-1 bg-phase-accent h-8"></div>
+<div class="w-1 bg-phase-accent h-10"></div>
+<div class="w-1 bg-phase-accent h-5"></div>
+<div class="w-1 bg-phase-accent h-7"></div>
+<div class="w-1 bg-phase-accent h-4"></div>
+<div class="w-1 bg-phase-accent h-9"></div>
+<div class="w-1 bg-phase-accent h-6"></div>
+<div class="w-1 bg-phase-accent h-2"></div>
+<div class="w-1 bg-phase-accent h-8"></div>
+<div class="w-1 bg-phase-accent h-5"></div>
+<div class="w-1 bg-phase-accent h-9"></div>
+</div>
+</div>
+<!-- Right Volume / Karaoke Preview -->
+<div class="lg:col-span-3 bg-phase-dark p-4 border border-outline-variant/30 space-y-2">
+<div class="font-kicker text-kicker text-phase-accent uppercase tracking-widest flex items-center justify-between">
+<span>KARAOKE PREVIEW</span>
+<span class="material-symbols-outlined text-[16px] text-phase-text-muted">mic</span>
+</div>
+<p class="font-body-md text-body-md italic text-on-surface leading-snug">
+                "Every prayer answered in the morning light, grace dey follow me day &amp; night..."
+              </p>
+<div class="pt-2 flex items-center justify-between border-t border-white/10 font-code-mono text-code-mono text-xs text-phase-text-muted">
+<span>KEY: C# MINOR</span>
+<span>BPM: 104</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= EDITORIAL STORY CHAPTER ================= -->
+<section class="py-20 md:py-space-section bg-phase-dark border-b border-outline-variant/20" id="story">
+<div class="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Portrait Card -->
+<div class="lg:col-span-5 relative">
+<div class="relative border border-white/10 bg-phase-black p-3">
+<div class="aspect-[4/5] overflow-hidden bg-phase-gray">
+<img class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-500" data-alt="Intense high-contrast portrait of Afrobeats artist Moonlight Afriqa featuring platinum blonde braids, modern black tailoring, and expressive spiritual gaze against a deep nocturnal green studio setting illuminated with crisp rim lighting and brutalist styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANGkiDw0GpBBV7KzF_YrKkcDebI5dp6--fz7lqCDBYCj1GkyitlHOtChNRs0K85VKMTLjSgcn0lLP74EZagcb8o1a5RTM1MyPKXVA3nF-nO4u6viZ0MDuxRYpZXijhpj5VTEX4Rmq1MkCex2Li-4LxBYznys9zAGrjztqV3ijNZmujwvnPve1A3Xo6HK4nsVwPmUZ09uNLopsHRnM4E5AKHVWQInEcvct7tA2LO9c2"/>
+</div>
+<div class="p-4 bg-phase-black flex justify-between items-center border-t border-white/10">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold block">Moonlight Afriqa</span>
+<span class="font-code-mono text-code-mono text-phase-accent">The Magic Pen • Lagos, Nigeria</span>
+</div>
+<span class="font-kicker text-kicker px-3 py-1 bg-white/5 border border-white/10 text-on-surface-variant uppercase">
+                7.1M+ VIRAL
+              </span>
+</div>
+</div>
+<!-- Decorative Stamp -->
+<div class="absolute -bottom-4 -right-4 bg-phase-accent text-phase-black p-3 font-code-mono text-code-mono font-bold text-xs uppercase hidden sm:block">
+            AUTHENTIC AFRO-FUSION
+          </div>
+</div>
+<!-- Right Editorial Narrative -->
+<div class="lg:col-span-7 space-y-6">
+<span class="font-kicker text-kicker text-phase-accent uppercase tracking-widest font-extrabold">THE MEANING BEHIND BLESSED</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-extrabold tracking-tight uppercase leading-tight">
+            GRATITUDE AS AN UNSTOPPABLE WEAPON
+          </h2>
+<div class="space-y-4 font-body-lg text-body-lg text-on-surface-variant">
+<p>
+              Following the viral phenomenon of <em>SASEZOLA</em>, Moonlight Afriqa (christened by tastemakers as <strong>The Magic Pen</strong>) retreated into isolation in Lagos and London to manifest his most candid spiritual testimony.
+            </p>
+<p>
+<em>"Blessed"</em> is neither accidental nor fleeting. It marries polyrhythmic Afro-fusion percussions with lush soul guitar voicings, documenting survival, stubborn hope, and the divine grace that converts underground hardship into global anthems.
+            </p>
+</div>
+<!-- Highlight Metric Stats Bento -->
+<div class="grid grid-cols-3 gap-4 pt-4 border-t border-outline-variant/30">
+<div>
+<div class="font-headline-md text-headline-md font-black text-on-surface">7.1M+</div>
+<div class="font-code-mono text-code-mono text-phase-text-muted text-[11px] uppercase">SASEZOLA Streams</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md font-black text-phase-accent">#1</div>
+<div class="font-code-mono text-code-mono text-phase-text-muted text-[11px] uppercase">Trending Sound</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md font-black text-on-surface">140+</div>
+<div class="font-code-mono text-code-mono text-phase-text-muted text-[11px] uppercase">Radio Playlists</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= LYRICS SNIPPET MODULE ================= -->
+<section class="py-20 md:py-space-section bg-phase-black border-b border-outline-variant/20" id="lyrics">
+<div class="max-w-[1400px] mx-auto px-6 md:px-12">
+<div class="max-w-3xl mx-auto text-center mb-12">
+<span class="font-kicker text-kicker text-phase-accent uppercase tracking-widest font-extrabold">OFFICIAL LYRICS EXCERPT</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-black uppercase text-on-surface mt-2">
+            SING ALONG BEFORE IT DROPS
+          </h2>
+</div>
+<div class="max-w-3xl mx-auto bg-phase-gray border-l-4 border-phase-accent p-8 md:p-12 space-y-6">
+<div class="space-y-4 font-body-lg text-body-lg text-on-surface italic leading-relaxed">
+<p class="text-phase-text-muted">[Verse 1]</p>
+<p>From the corner where the street lights fade, I carried heavy dreams that the doubts had made.</p>
+<p>Mama told me boy keep your head real high, the stars don’t ask permission just to light the sky.</p>
+<p class="text-phase-accent font-bold pt-4">[Chorus]</p>
+<p class="text-white text-xl md:text-2xl font-bold not-italic font-headline-sm">
+              "Tell bad belle say I <span class="bg-phase-accent text-phase-black px-1.5 py-0.5 font-black">BLESSED</span>, no be stress.<br/>
+              Grace wey follow me na pure harvest.<br/>
+              Any fire dem bring, I turn to gold—<br/>
+              Na the story wey the angels already told."
+            </p>
+<p class="text-phase-text-muted pt-2">[Outro]</p>
+<p>Yeah yeah... Moonlight call am, The Magic Pen sign am.</p>
+</div>
+<div class="pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
+<span class="font-code-mono text-code-mono text-phase-text-muted">WRITTEN BY: MOONLIGHT AFRIQA • PROD: PHASE SOUNDWORKS</span>
+<button class="btn-phase-secondary px-4 py-2 font-label-btn text-label-btn tracking-wider uppercase font-bold flex items-center gap-1.5 text-xs" onclick="copyLyricsSnippet()">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+              COPY CHORUS
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= VIP PERKS & FAN PRESALE DRAW ================= -->
+<section class="py-20 md:py-space-section bg-phase-dark border-b border-outline-variant/20 relative overflow-hidden">
+<div class="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 space-y-4">
+<span class="font-kicker text-kicker text-phase-accent uppercase tracking-widest font-extrabold">FAN PRESALE &amp; VIP PERKS</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-black uppercase text-on-surface leading-tight">
+              PRE-SAVE TO WIN EXCLUSIVE TOUR ACCESS
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+              Every fan who pre-saves "Blessed" automatically qualifies for entry into the global sweepstakes. Prizes include VIP Backstage passes to the upcoming London &amp; Lagos showcase, signed physical test presses, and custom Phase merchandise.
+            </p>
+<ul class="space-y-3 pt-2 font-body-md text-body-md text-on-surface">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-phase-accent text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>2x VIP All-Access Passes (London O2 Shepherd’s Bush or Lagos Terra Kulture)</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-phase-accent text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Limited Edition Signed 7-inch "Blessed" Vinyl</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-phase-accent text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Private Zoom Listening Session with Moonlight Afriqa</span>
+</li>
+</ul>
+</div>
+<!-- VIP Capture Form -->
+<div class="lg:col-span-6">
+<div class="bg-phase-black border border-white/10 p-8 md:p-10 space-y-6">
+<div class="border-b border-white/10 pb-4">
+<h3 class="font-headline-sm text-headline-sm font-bold uppercase text-white">VIP ENTRY PASS</h3>
+<p class="font-body-sm text-body-sm text-phase-text-muted">Enter your email and pre-save platform username to verify entry.</p>
+</div>
+<form class="space-y-4" id="vip-form" onsubmit="handleVipSubmit(event)">
+<div>
+<label class="block font-kicker text-kicker uppercase tracking-widest text-on-surface-variant mb-2">FULL NAME</label>
+<input class="w-full bg-phase-dark border border-white/15 px-4 py-3 text-white placeholder-phase-text-muted focus:border-phase-accent focus:ring-0 rounded-none transition-colors" placeholder="e.g. Tunde Adebayo" required="" type="text"/>
+</div>
+<div>
+<label class="block font-kicker text-kicker uppercase tracking-widest text-on-surface-variant mb-2">EMAIL ADDRESS</label>
+<input class="w-full bg-phase-dark border border-white/15 px-4 py-3 text-white placeholder-phase-text-muted focus:border-phase-accent focus:ring-0 rounded-none transition-colors" placeholder="name@domain.com" required="" type="email"/>
+</div>
+<div>
+<label class="block font-kicker text-kicker uppercase tracking-widest text-on-surface-variant mb-2">PREFERRED TOUR CITY</label>
+<select class="w-full bg-phase-dark border border-white/15 px-4 py-3 text-white focus:border-phase-accent focus:ring-0 rounded-none transition-colors">
+<option>London (O2 Shepherd's Bush)</option>
+<option>Lagos (Terra Kulture Arena)</option>
+<option>Accra (Alliance Française)</option>
+<option>New York (Sony Hall)</option>
+</select>
+</div>
+<button class="w-full btn-phase-primary py-4 font-label-btn text-label-btn tracking-wider uppercase font-black" type="submit">
+                  CONFIRM MY VIP ENTRY
+                </button>
+</form>
+<div class="hidden p-4 bg-phase-accent/20 border border-phase-accent text-phase-accent font-code-mono text-code-mono text-center" id="vip-success-message">
+                ✓ ENTRY CONFIRMED! CHECK YOUR INBOX FOR YOUR UNIQUE DRAW TICKET.
+              </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= MERCH SPOTLIGHT CHAPTER ================= -->
+<section class="py-20 md:py-space-section bg-phase-black border-b border-outline-variant/20" id="merch">
+<div class="max-w-[1400px] mx-auto px-6 md:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<span class="font-kicker text-kicker text-phase-accent uppercase tracking-widest font-extrabold">EXCLUSIVE MERCH DROP</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-black uppercase text-on-surface mt-2">
+              LIMITED RUN COLLECTIBLES
+            </h2>
+</div>
+<span class="font-code-mono text-code-mono text-phase-text-muted">SHIPS GLOBALLY • PHASE SOUNDWORKS OFFICIAL</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Product 1: Tour Hoodie -->
+<div class="bg-phase-gray border border-white/10 p-5 group flex flex-col justify-between hover:border-phase-accent/40 transition-all">
+<div class="space-y-4">
+<div class="aspect-square bg-phase-dark overflow-hidden border border-white/5 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Brutalist streetwear heavyweight oversized black hoodie with neon mint typography Blessed by Moonlight Afriqa printed across the back in editorial layout against minimal industrial concrete background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZe7kUghiluwVeuUo9WAfe_A6gFi8sll748VRLrey_3wC0cngUQm23mP56tRuziu4TvJpdp3m_XeLjOxmjotq-eVIkdt4qK9jeV0f2tRP1QI4GTTorYAuR1KJI1sWbpIdpZ5Tm4fTnfCb58XmFb9b7SeY5a-E0oNGYfsdHrN2oEakWzmgtWB1H24akn8pn9TgqJShbdsmzXQXyE3Ooggi_rj8aoAHtePzipB5czwFY"/>
+<span class="absolute top-3 left-3 bg-phase-black px-2 py-1 font-kicker text-kicker uppercase text-phase-accent border border-phase-accent/30">DROP 01</span>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Blessed Heavyweight Tour Hoodie</h3>
+<p class="font-body-sm text-body-sm text-phase-text-muted">450 GSM French Terry Cotton</p>
+</div>
+<span class="font-counter-display text-xl font-black text-phase-accent">£65</span>
+</div>
+</div>
+<button class="mt-6 w-full btn-phase-secondary py-3 font-label-btn text-label-btn tracking-wider uppercase font-bold group-hover:bg-phase-accent group-hover:text-phase-black group-hover:border-phase-accent transition-all" onclick="addToCartModal('Blessed Tour Hoodie', '£65')">
+              ADD TO CART
+            </button>
+</div>
+<!-- Product 2: Physical 7-inch Vinyl -->
+<div class="bg-phase-gray border border-white/10 p-5 group flex flex-col justify-between hover:border-phase-accent/40 transition-all">
+<div class="space-y-4">
+<div class="aspect-square bg-phase-dark overflow-hidden border border-white/5 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Vinyl packaging display showing 7 inch clear emerald vinyl single with heavy matte black jacket artwork featuring Moonlight Afriqa Blessed typography on studio pedestal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT3MlmzTE1XPCbrvudRk58GBT5E7Kyx3SQgFFrCDUOshAPhvlk_AODsK7oZyDkAYENsN7BDgKzNf-KFwDZ1aLr08KGk9KtAV6dT0Yqpvi3zg_7_v3V9FZNabWse6GEDACk6E2HeXJXgyKtuPqeRMwKM9UVnZ333C4Sx6zpdGAazcoSLiey3Hx0EV4FGGiGrPwOPRA9f5ZQ4Z2EhCffQ7PmSkljOMUsuAsH0Xi-rVgU"/>
+<span class="absolute top-3 left-3 bg-phase-black px-2 py-1 font-kicker text-kicker uppercase text-phase-accent border border-phase-accent/30">PRE-ORDER</span>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Blessed 7-inch Collector's Vinyl</h3>
+<p class="font-body-sm text-body-sm text-phase-text-muted">A-Side: Blessed / B-Side: SASEZOLA VIP</p>
+</div>
+<span class="font-counter-display text-xl font-black text-phase-accent">£35</span>
+</div>
+</div>
+<button class="mt-6 w-full btn-phase-secondary py-3 font-label-btn text-label-btn tracking-wider uppercase font-bold group-hover:bg-phase-accent group-hover:text-phase-black group-hover:border-phase-accent transition-all" onclick="addToCartModal('Blessed 7-inch Vinyl', '£35')">
+              ADD TO CART
+            </button>
+</div>
+<!-- Product 3: Tour Long Sleeve Graphic Tee -->
+<div class="bg-phase-gray border border-white/10 p-5 group flex flex-col justify-between hover:border-phase-accent/40 transition-all md:col-span-2 lg:col-span-1">
+<div class="space-y-4">
+<div class="aspect-square bg-phase-dark overflow-hidden border border-white/5 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Black graphic longsleeve band tee with neon green abstract paintbrush strokes and metallic silver lettering Moonlight Afriqa The Magic Pen World Tour displayed flatlay." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXm48sIwh3biYpXi0TbQO_AdfEk4egQ6oxyElGXPnNb7TjDDlMlvOrSau9cVYl__kIEbps-gcbgImILo-mGsJ_CmVS9777aeT6eLt66hqrASYLXh6jtvTaGkixdvGbLRtrWz2PE3aF-ivaYSVnFl9IjXcd9dZSvjwaJdxBKtafzlpybmUX5wYo2iNnpQcvawocdCRz5yzmkXHMjBrcaVdp3RkRAmfy4l2AzOH1ZG3X"/>
+<span class="absolute top-3 left-3 bg-phase-black px-2 py-1 font-kicker text-kicker uppercase text-phase-accent border border-phase-accent/30">EXCLUSIVE</span>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">The Magic Pen Graphic Tee</h3>
+<p class="font-body-sm text-body-sm text-phase-text-muted">Vintage Wash • 100% Bio-Washed Cotton</p>
+</div>
+<span class="font-counter-display text-xl font-black text-phase-accent">£42</span>
+</div>
+</div>
+<button class="mt-6 w-full btn-phase-secondary py-3 font-label-btn text-label-btn tracking-wider uppercase font-bold group-hover:bg-phase-accent group-hover:text-phase-black group-hover:border-phase-accent transition-all" onclick="addToCartModal('The Magic Pen Graphic Tee', '£42')">
+              ADD TO CART
+            </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER (SHARED COMPONENT) ================= -->
+<footer class="bg-phase-black dark:bg-phase-black docked full-width bottom border-t border-outline-variant/20">
+<div class="w-full py-12 px-6 md:px-12 max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<!-- Brand & Copyright -->
+<div class="space-y-2 text-center md:text-left">
+<span class="font-brand-edgy font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface dark:text-on-surface uppercase block">
+          MOONLIGHT AFRIQA
+        </span>
+<p class="font-body-sm text-body-sm text-phase-text-muted max-w-xl">
+          © 2024 Moonlight Afriqa. Distributed globally via Cosmos Music Group / Phase Soundworks. All Rights Reserved.
+        </p>
+</div>
+<!-- Footer Navigation Links (Exact Shared Blueprint Strings) -->
+<div class="flex flex-wrap items-center justify-center md:justify-end gap-x-6 gap-y-2">
+<a class="font-body-sm text-body-sm text-phase-text-muted dark:text-phase-text-muted hover:text-phase-accent dark:hover:text-phase-accent transition-colors duration-150" href="#privacy">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-phase-text-muted dark:text-phase-text-muted hover:text-phase-accent dark:hover:text-phase-accent transition-colors duration-150" href="#terms">Terms of Service</a>
+<a class="font-body-sm text-body-sm text-phase-text-muted dark:text-phase-text-muted hover:text-phase-accent dark:hover:text-phase-accent transition-colors duration-150" href="#epk">Press Kit &amp; EPK</a>
+<a class="font-body-sm text-body-sm text-phase-text-muted dark:text-phase-text-muted hover:text-phase-accent dark:hover:text-phase-accent transition-colors duration-150" href="#management">Management Inquiries</a>
+<a class="font-body-sm text-body-sm text-phase-text-muted dark:text-phase-text-muted hover:text-phase-accent dark:hover:text-phase-accent transition-colors duration-150" href="#api">Universal Smart-Link API</a>
+</div>
+</div>
+</footer>
+<!-- ================= TOAST NOTIFICATION MODAL ================= -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-32 transition-transform duration-300 pointer-events-none" id="toast-notification">
+<div class="bg-phase-dark border-2 border-phase-accent p-4 shadow-[0_10px_30px_rgba(0,0,0,0.9)] flex items-center gap-3">
+<span class="material-symbols-outlined text-phase-accent text-[24px]">check_circle</span>
+<div>
+<div class="font-kicker text-kicker uppercase tracking-widest text-phase-accent font-bold" id="toast-title">SMART PRE-SAVE</div>
+<div class="font-code-mono text-code-mono text-white text-xs" id="toast-desc">Saved to your library!</div>
+</div>
+</div>
+</div>
+<!-- Vanilla Interaction Script -->
+<script>
+    // Live Countdown Timer
+    let secondsLeft = 14 * 86400 + 8 * 3600 + 32 * 60 + 15;
+    const daysEl = document.getElementById('timer-days');
+    const hoursEl = document.getElementById('timer-hours');
+    const minsEl = document.getElementById('timer-minutes');
+    const secsEl = document.getElementById('timer-seconds');
+
+    setInterval(() => {
+      if (secondsLeft > 0) {
+        secondsLeft--;
+        const d = Math.floor(secondsLeft / (3600 * 24));
+        const h = Math.floor((secondsLeft % (3600 * 24)) / 3600);
+        const m = Math.floor((secondsLeft % 3600) / 60);
+        const s = Math.floor(secondsLeft % 60);
+
+        if (daysEl) daysEl.innerText = String(d).padStart(2, '0');
+        if (hoursEl) hoursEl.innerText = String(h).padStart(2, '0');
+        if (minsEl) minsEl.innerText = String(m).padStart(2, '0');
+        if (secsEl) secsEl.innerText = String(s).padStart(2, '0');
+      }
+    }, 1000);
+
+    // Audio Player Simulation
+    let isPlaying = false;
+    let playProgress = 0;
+    let playInterval = null;
+    const playBtn = document.getElementById('teaser-play-btn');
+    const playIcon = document.getElementById('teaser-play-icon');
+    const scrubberFill = document.getElementById('scrubber-fill');
+    const timeCurrent = document.getElementById('player-time-current');
+    const heroVinyl = document.getElementById('hero-vinyl');
+
+    if (playBtn) {
+      playBtn.addEventListener('click', togglePlayAudio);
+    }
+
+    const audioDockToggle = document.getElementById('audio-dock-toggle');
+    if (audioDockToggle) {
+      audioDockToggle.addEventListener('click', togglePlayAudio);
+    }
+
+    function togglePlayAudio() {
+      isPlaying = !isPlaying;
+      if (isPlaying) {
+        if (playIcon) playIcon.innerText = 'pause';
+        if (heroVinyl) heroVinyl.classList.remove('animate-spin-paused');
+        playInterval = setInterval(() => {
+          playProgress += 0.5;
+          if (playProgress > 30) {
+            playProgress = 0;
+          }
+          const pct = (playProgress / 30) * 100;
+          if (scrubberFill) scrubberFill.style.width = pct + '%';
+          const sec = Math.floor(playProgress);
+          if (timeCurrent) timeCurrent.innerText = `0:${sec < 10 ? '0' : ''}${sec}`;
+        }, 500);
+        showToast('TEASER PLAYING', 'Streaming 0:30 clip: Blessed (Afrobeats Master)');
+      } else {
+        if (playIcon) playIcon.innerText = 'play_arrow';
+        if (heroVinyl) heroVinyl.classList.add('animate-spin-paused');
+        clearInterval(playInterval);
+      }
+    }
+
+    // Pre-Save Interaction
+    function triggerPreSave(platform) {
+      showToast('PRE-SAVE CONFIRMED', `Added 'Blessed' by Moonlight Afriqa on ${platform}!`);
+    }
+
+    // Share Portal Trigger
+    const shareHubBtn = document.getElementById('share-hub-btn');
+    if (shareHubBtn) {
+      shareHubBtn.addEventListener('click', () => {
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(window.location.href);
+        }
+        showToast('LINK COPIED', 'Smart pre-save URL copied to clipboard.');
+      });
+    }
+
+    // Copy Chorus Lyrics
+    function copyLyricsSnippet() {
+      const chorus = "Tell bad belle say I BLESSED, no be stress. Grace wey follow me na pure harvest. Any fire dem bring, I turn to gold— Na the story wey the angels already told.";
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(chorus);
+      }
+      showToast('LYRICS COPIED', 'Blessed chorus copied to your clipboard!');
+    }
+
+    // VIP Form
+    function handleVipSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('vip-form');
+      const success = document.getElementById('vip-success-message');
+      if (form && success) {
+        form.classList.add('hidden');
+        success.classList.remove('hidden');
+      }
+      showToast('VIP ENTRY RECORDED', 'Ticket generation code dispatched to email.');
+    }
+
+    // Add To Cart Mock
+    function addToCartModal(item, price) {
+      showToast('MERCH RESERVED', `${item} (${price}) added to quick checkout cart.`);
+    }
+
+    // Universal Toast Trigger
+    function showToast(title, desc) {
+      const toast = document.getElementById('toast-notification');
+      const tTitle = document.getElementById('toast-title');
+      const tDesc = document.getElementById('toast-desc');
+      if (toast && tTitle && tDesc) {
+        tTitle.innerText = title;
+        tDesc.innerText = desc;
+        toast.classList.remove('translate-y-32');
+        setTimeout(() => {
+          toast.classList.add('translate-y-32');
+        }, 3200);
+      }
+    }
+  </script>
+</body></html>
