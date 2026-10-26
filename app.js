@@ -50,6 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if (closeDrawerBtn) closeDrawerBtn.addEventListener('click', closeDrawer);
   if (drawerBackdrop) drawerBackdrop.addEventListener('click', closeDrawer);
 
+  if (sideDrawer) {
+    sideDrawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeDrawer);
+    });
+  }
+
   // 4. Pre-save "Blessed" Countdown Timer
   const daysEl = document.getElementById('count-days');
   const hoursEl = document.getElementById('count-hours');

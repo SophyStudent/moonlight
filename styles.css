@@ -363,3 +363,53 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   position: relative;
 }
+
+/* ==========================================================================
+   MOBILE & TABLET RESPONSIVENESS REFINEMENTS
+   ========================================================================== */
+@media (max-width: 768px) {
+  .hero-stage {
+    min-height: 85vh;
+    padding-top: 5rem;
+  }
+  .hero-artist-name {
+    font-size: clamp(2.3rem, 11vw, 4.2rem);
+    text-align: left;
+    max-width: 100%;
+    transform: skewX(-2deg) rotate(-1deg);
+  }
+  .hero-artist-cutout {
+    right: 0;
+    width: 85vw;
+    max-width: 380px;
+    height: 75vh;
+    min-height: 380px;
+    opacity: 0.9;
+  }
+  .hero-brush-stroke {
+    height: 280px;
+    top: 55%;
+    max-width: 100vw;
+  }
+  .section-title-phase {
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+  .side-drawer {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-stage {
+    min-height: 78vh;
+  }
+  .hero-artist-cutout {
+    width: 90vw;
+    max-width: 320px;
+    height: 65vh;
+    min-height: 320px;
+  }
+  .hero-brush-stroke {
+    height: 220px;
+  }
+}

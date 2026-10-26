@@ -75,8 +75,8 @@
     <div class="max-w-[1400px] mx-auto px-6 lg:px-12 h-24 flex items-center justify-between">
       
       <!-- Brand Logo (Same font style as Hero Image) -->
-      <a href="#" class="flex items-center gap-2 group" aria-label="Moonlight Afriqa Official Home">
-        <span class="font-brand-edgy text-2xl tracking-wider text-white group-hover:text-[#2bfb9c] transition-colors">
+      <a href="#" class="flex items-center gap-2 group shrink-0" aria-label="Moonlight Afriqa Official Home">
+        <span class="font-brand-edgy text-xl sm:text-2xl tracking-wider text-white group-hover:text-[#2bfb9c] transition-colors">
           MOONLIGHT AFRIQA
         </span>
         <span class="inline-block w-2 h-2 rounded-full bg-[#2bfb9c]"></span>
@@ -95,7 +95,7 @@
       </nav>
 
       <!-- Action Utilities -->
-      <div class="flex items-center space-x-6">
+      <div class="flex items-center space-x-4 sm:space-x-6">
         <button type="button" aria-label="Search" class="text-neutral-400 hover:text-white transition-colors">
           <i class="fa-solid fa-magnifying-glass text-xs"></i>
         </button>
@@ -105,14 +105,9 @@
           <span class="absolute -top-2 -right-2 bg-[#2bfb9c] text-black text-[9px] font-heading font-bold w-4 h-4 rounded-full flex items-center justify-center">0</span>
         </a>
 
-        <!-- Side Drawer Toggle -->
-        <button id="open-side-drawer" type="button" aria-label="Open Sidebar Menu" class="text-neutral-300 hover:text-[#2bfb9c] transition-colors p-1">
-          <i class="fa-solid fa-bars-staggered text-lg"></i>
-        </button>
-
-        <!-- Mobile Menu Toggle Button -->
-        <button id="mobile-menu-toggle" type="button" aria-label="Toggle Mobile Menu" class="xl:hidden text-neutral-300 hover:text-white p-1">
-          <i class="fa-solid fa-bars text-xl"></i>
+        <!-- Responsive Menu Icon Toggle (Opens Side Navigation Drawer on all screen sizes) -->
+        <button id="open-side-drawer" type="button" aria-label="Open Navigation Menu" class="text-neutral-200 hover:text-[#2bfb9c] transition-colors p-1.5 flex items-center justify-center">
+          <i class="fa-solid fa-bars text-xl sm:text-2xl"></i>
         </button>
       </div>
 
